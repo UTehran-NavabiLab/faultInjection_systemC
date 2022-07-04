@@ -1,7 +1,7 @@
 #include "systemc.h"
 #include <string>
 #include <iostream>
-#include "faultInjection_package.h.h"
+#include "FIM.h"
 using namespace std;
 
 class or_n : public SC_MODULE_FAULTABLE {

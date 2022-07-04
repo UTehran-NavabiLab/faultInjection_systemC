@@ -4,8 +4,8 @@
 /////////////////////////////////////////////////////////////////////////////////////
 //    D Flip Flop: DFF_NP0
 /////////////////////////////////////////////////////////////////////////////////////
-SC_MODULE(DFF_NP0){
-
+class DFF_NP0 : public SC_MODULE_FAULTABLE {
+public:
     sc_in<sc_logic> D, C, R;
     sc_out<sc_logic> Q;
 
@@ -16,8 +16,8 @@ SC_MODULE(DFF_NP0){
     // sc_time tplh;
 
     SC_HAS_PROCESS(DFF_NP0);
-    DFF_NP0(sc_module_name _name) 
-    : sc_module(_name) {
+	DFF_NP0(sc_module_name _name, faultRegistry* accessRegistryIn){
+        : sc_module(_name) {
 
         SC_THREAD(eval);
             sensitive << val;
@@ -48,8 +48,8 @@ SC_MODULE(DFF_NP0){
 /////////////////////////////////////////////////////////////////////////////////////
 //    D Flip Flop: DFF_NP1
 /////////////////////////////////////////////////////////////////////////////////////
-SC_MODULE(DFF_NP1){
-
+class DFF_NP1 : public SC_MODULE_FAULTABLE {
+public:
     sc_in<sc_logic> D, C, R;
     sc_out<sc_logic> Q;
 
@@ -60,7 +60,7 @@ SC_MODULE(DFF_NP1){
     // sc_time tplh;
 
     SC_HAS_PROCESS(DFF_NP1);
-    DFF_NP1(sc_module_name _name) 
+	DFF_NP1(sc_module_name _name, faultRegistry* accessRegistryIn){
     : sc_module(_name) {
     // DFlipFlop(sc_module_name _name, sc_time tphl, sc_time tplh) 
     // : sc_module(_name), tphl(tphl), tplh(tplh) {

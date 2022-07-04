@@ -3,8 +3,8 @@
 #include <iostream>
 using namespace std;
 
-#ifndef __faultInjection_package.h_H__
-#define __faultInjection_package.h_H__
+#ifndef __FIM.h_H__
+#define __FIM.h_H__
 
 enum Faults { SA0, SA1, BitFlip, NoFault };
 

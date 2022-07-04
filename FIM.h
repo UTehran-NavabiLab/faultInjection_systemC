@@ -7,8 +7,8 @@
 
 using namespace std;
 
-#ifndef __faultInjection_package_H__
-#define __faultInjection_package_H__
+#ifndef __FIM_H__
+#define __FIM_H__
 
 enum Faults { SA0, SA1, BitFlip, NoFault };
 
@@ -17,6 +17,23 @@ public:
 	sc_signal <bool> faultInjected;
 	SC_MODULE_FAULTABLE() {}
 };
+
+
+class fault_portfolio{
+private:
+	SC_MODULE_FAULTABLE* faultable_module;
+	int base_id;
+public:
+	fault_portfolio(SC_MODULE_FAULTABLE* faultable_module, int base_id): base_id(base_id){
+		// register all ports
+	}
+	void register_obj(SC_MODULE_FAULTABLE* faultable_module, int base_id){
+		for(){
+			
+		}
+	}
+};
+
 
 class faultProperty{
 private:
