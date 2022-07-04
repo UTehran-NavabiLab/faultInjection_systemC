@@ -12,6 +12,22 @@ using namespace std;
 
 enum Faults { SA0, SA1, BitFlip, NoFault };
 
+
+class fault_portfolio{
+private:
+	SC_MODULE_FAULTABLE* faultable_module;
+	int base_id;
+public:
+	fault_portfolio(SC_MODULE_FAULTABLE* faultable_module, int base_id): base_id(base_id){
+		// register all ports
+	}
+	void register_obj(SC_MODULE_FAULTABLE* faultable_module, int base_id){
+		for(){
+			
+		}
+	}
+};
+
 ///////////////////////////////////// future project /////////////////////////////////////
 template <class T, sc_write_policy WRITER_POLICY = SC_ONE_WRITER>
 class sc_flt_signal : public sc_core::sc_signal<T, WRITER_POLICY>{

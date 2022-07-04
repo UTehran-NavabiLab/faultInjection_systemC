@@ -19,41 +19,25 @@ public:
 };
 
 
-class fault_portfolio{
-private:
-	SC_MODULE_FAULTABLE* faultable_module;
-	int base_id;
-public:
-	fault_portfolio(SC_MODULE_FAULTABLE* faultable_module, int base_id): base_id(base_id){
-		// register all ports
-	}
-	void register_obj(SC_MODULE_FAULTABLE* faultable_module, int base_id){
-		for(){
-			
-		}
-	}
-};
-
-
 class faultProperty{
 private:
-	int moduleId;
+	string moduleId;
 	int faultId;
-	int objId;
+	string objId;
 	Faults faultType;
 	bool enable;
 public:
 	faultProperty(){};
-	faultProperty(int moduleId, int objId, int faultId, Faults faultType) :moduleId{ moduleId }, objId{ objId }, faultId{ faultId }, faultType{ faultType }, enable(0) {}
-	void setFaultProperty(int moduleId, int objId, int faultId, Faults faultType){
+	faultProperty(string moduleId, string objId, int faultId, Faults faultType) :moduleId{ moduleId }, objId{ objId }, faultId{ faultId }, faultType{ faultType }, enable(0) {}
+	void setFaultProperty(string moduleId, string objId, int faultId, Faults faultType){
 		this->moduleId = moduleId; 
 		this->objId = objId; 
 		this->faultId = faultId; 
 		this->faultType = faultType; 
 		this->enable = 0;
 	}
-	int getModuleId(){ return moduleId; }
-	int getObjId(){return objId;}
+	string getModuleId(){ return moduleId; }
+	string getObjId(){return objId;}
 	int getFaultId(){return faultId;}
 	Faults getFaultType(){return faultType;}
 	bool getEnable(){return enable;}
@@ -65,15 +49,15 @@ public:
 class faultRegistry {
 private:
 	vector <SC_MODULE_FAULTABLE*> moduleVector;
-	vector <int> moduleIdVector;
+	vector <string> moduleIdVector;
 	vector <faultProperty*> faultVector;
 public:
-	int registerModule(SC_MODULE_FAULTABLE* regModule);
+	void registerModule(SC_MODULE_FAULTABLE* regModule);
 	void registerFault(faultProperty* regFault);
-	void saboteurOn(int moduleId, int objId, int faultId); //search, find, enable
-	void saboteurOff(int moduleId, int objId, int faultId); //search, find, disable
-	Faults getFaultType(int moduleId, int objId, int faultId); //search, find, getFaultType
-	Faults getObjectFaultType(int moduleId, int objId); //search, find, if enabled getFaultType
+	void saboteurOn(string moduleId, string objId, int faultId); //search, find, enable
+	void saboteurOff(string moduleId, string objId, int faultId); //search, find, disable
+	Faults getFaultType(string moduleId, string objId, int faultId); //search, find, getFaultType
+	Faults getObjectFaultType(string moduleId, string objId); //search, find, if enabled getFaultType
 	void infFaults();
 	void disp_faultList(const vector<vector<string>>& fualtList);
 	void infStuckAt();
@@ -81,11 +65,11 @@ public:
 	void injectFaultList(const vector<vector<string>>& fualtList, int num_fault);
 };
 
-int faultRegistry::registerModule(SC_MODULE_FAULTABLE* regModule) {
+void faultRegistry::registerModule(SC_MODULE_FAULTABLE* regModule) {
 	moduleVector.push_back(regModule);
-	int moduleId = moduleVector.size()-1;
+	string moduleId = regModule->hardwareObjectId;
 	moduleIdVector.push_back(moduleId);
-	return moduleId;
+	// string moduleId = moduleVector.size()-1;
 }
 
 void faultRegistry::registerFault(faultProperty* regFault) {
@@ -115,27 +99,31 @@ void faultRegistry::infStuckAt(){
 	}
 }
 
-void faultRegistry::saboteurOn(int moduleId, int objId, int faultId){
+void faultRegistry::saboteurOn(string moduleId, string objId, int faultId){
 	for(int i=0; i<faultVector.size(); i++){
 		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getFaultId() == faultId)){
 			faultVector[i]->enableFault();	//Activate fault
-	//		int mId = faultVector[i]-> getModuleId();
-			moduleVector[moduleId]->faultInjected.write(true); // Inject fault
 		}
+	}
+	for (int j=0; j<moduleIdVector.size(); j++){
+		if(moduleIdVector[j] == moduleId)
+			moduleVector[j]->faultInjected.write(true); // Inject fault
 	}
 }
 
-void faultRegistry::saboteurOff(int moduleId, int objId, int faultId){
+void faultRegistry::saboteurOff(string moduleId, string objId, int faultId){
 	for(int i=0; i<faultVector.size(); i++){
 		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getFaultId() == faultId)){
 			faultVector[i]->disableFault();
-//			int mId = faultVector[i]-> getModuleId();
-			moduleVector[moduleId]->faultInjected.write(false);
 		}
 	}
+	for (int j=0; j<moduleIdVector.size(); j++){
+		if(moduleIdVector[j] == moduleId)
+			moduleVector[j]->faultInjected.write(false); // deactivate fault
+	}	
 }
 
-Faults faultRegistry::getFaultType(int moduleId, int objId, int faultId){
+Faults faultRegistry::getFaultType(string moduleId, string objId, int faultId){
 	for(int i=0; i<faultVector.size(); i++){
 		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getFaultId() == faultId))
 			return faultVector[i]->getFaultType();
@@ -143,7 +131,7 @@ Faults faultRegistry::getFaultType(int moduleId, int objId, int faultId){
 	return NoFault;
 }
 
-Faults faultRegistry::getObjectFaultType(int moduleId, int objId){
+Faults faultRegistry::getObjectFaultType(string moduleId, string objId){
 	for(int i=0; i<faultVector.size(); i++){
 		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) &&(faultVector[i]->getEnable() == true))
 			return faultVector[i]->getFaultType();

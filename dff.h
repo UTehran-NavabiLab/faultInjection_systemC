@@ -6,7 +6,7 @@ using namespace std;
 
 class dff : public SC_MODULE_FAULTABLE {
 protected:
-	int hardwareObjectId;
+	string hardwareObjectId;
 	faultRegistry* accessRegistry;
 	
 public:
@@ -21,11 +21,12 @@ public:
 	dff(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		hardwareObjectId = accessRegistry->registerModule(this);
+		accessRegistry->registerModule(this);
+        hardwareObjectId = _name
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,1,1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,1,2,SA1);
+		faults[0].setFaultProperty(hardwareObjectId,"D",1,SA0); //objId:1 for D
+		faults[1].setFaultProperty(hardwareObjectId,"D",2,SA1);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -51,18 +52,18 @@ public:
     
 	void faultable_set(void){
 		
-		cout << "fault on D = " << accessRegistry->getObjectFaultType(hardwareObjectId,1) << " --- Time: " << sc_time_stamp() << endl;
+		cout << "fault on D = " << accessRegistry->getObjectFaultType(hardwareObjectId,"D") << " --- Time: " << sc_time_stamp() << endl;
 		
         if ((C->read() == SC_LOGIC_1) && ((PRE->read() == SC_LOGIC_0) && (CLR->read() == SC_LOGIC_0 && global_reset->read() == SC_LOGIC_0))){
             if (NbarT->read() == SC_LOGIC_1) 
 				val.write(Si->read());
             else if (CE->read() == SC_LOGIC_1){
-				if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == NoFault)
+				if (accessRegistry->getObjectFaultType(hardwareObjectId,"D") == NoFault)
 					val.write(D->read());
 				else{
-					if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA0)
+					if (accessRegistry->getObjectFaultType(hardwareObjectId,"D") == SA0)
 						val.write(SC_LOGIC_0);
-					else if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA1)
+					else if (accessRegistry->getObjectFaultType(hardwareObjectId,"D") == SA1)
 						val.write(SC_LOGIC_1);
 				} 
 			// END ELSE IF

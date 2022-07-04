@@ -6,7 +6,7 @@ using namespace std;
 
 class nor_n : public SC_MODULE_FAULTABLE {
 protected:
-	int hardwareObjectId;
+	string hardwareObjectId;
 	faultRegistry* accessRegistry;
 	
 public:
@@ -19,13 +19,14 @@ public:
 	nor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		hardwareObjectId = accessRegistry->registerModule(this);
+		accessRegistry->registerModule(this);
+        hardwareObjectId = _name
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,1,1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,1,2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,2,3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,2,4,SA1);
+		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -40,11 +41,11 @@ public:
 	// Incorporate faults in the functionality
 	void prc_Original_nor_n(){
 		
-		cout << "fault on in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,1) << " --- fault on in1[1] = " 
-			<< accessRegistry->getObjectFaultType(hardwareObjectId,2) <<  " --- Time: " << sc_time_stamp() << endl;
+		cout << "fault on in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+			<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << endl;
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,2) == NoFault){
+		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
+			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
 			if ((in1[0]->read() == SC_LOGIC_0) && (in1[1]->read() == SC_LOGIC_0)){
 				out1->write(SC_LOGIC_1);
 			} else {
@@ -52,14 +53,14 @@ public:
 			}
 		}
 		else{	
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA1 || accessRegistry->getObjectFaultType(hardwareObjectId,2) == SA1)
+			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 || accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA0 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,2) == SA0)
+			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 
+					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_1;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA0){
+			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0){
 
 				if (in1[1]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_1;
@@ -67,7 +68,7 @@ public:
 					out1 = SC_LOGIC_0;
 			}
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,2) == SA0){
+			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0){
 
 				if (in1[0]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_1;

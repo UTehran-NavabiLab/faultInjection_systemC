@@ -6,7 +6,7 @@ using namespace std;
 
 class pin : public SC_MODULE_FAULTABLE {
 protected:
-	int hardwareObjectId;
+	string hardwareObjectId;
 	faultRegistry* accessRegistry;
 	
 public:
@@ -19,11 +19,12 @@ public:
 	pin(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		hardwareObjectId = accessRegistry->registerModule(this);
+		accessRegistry->registerModule(this);
+        hardwareObjectId = _name
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,1,1,SA0); //objId:1 for in1
-		faults[1].setFaultProperty(hardwareObjectId,1,2,SA1);
+		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
+		faults[1].setFaultProperty(hardwareObjectId,"in1",2,SA1);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -36,16 +37,16 @@ public:
 	// Incorporate faults in the functionality
 	void prc_Original_pin(){
 		
-		cout << "fault on in1 = " << accessRegistry->getObjectFaultType(hardwareObjectId,1) <<  " --- Time: " << sc_time_stamp() << endl;
+		cout << "fault on in1 = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << endl;
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == NoFault){
+		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
 			out1 = in1;
 		}
 		else{	
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA0)
+			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA0)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,1) == SA1)
+			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA1)
 				out1 = SC_LOGIC_1;
 			else
 				out1 = SC_LOGIC_X;
