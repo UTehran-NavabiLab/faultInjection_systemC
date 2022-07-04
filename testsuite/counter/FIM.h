@@ -158,10 +158,21 @@ vector<vector<string>> faultRegistry::readFaultList(ifstream& faultList){
         while(getline(sstream, tempString, '/')){
             fault_prop.push_back(tempString);
         }
+        
+        // on the last round, right before EOF break the loop (otherwise raises seg. fault)
+        if(!faultList){
+            break;
+        }
+        // convert "one" char to string
+        string str2c(1, fault_prop.back().back());
+        fault_prop.push_back(str2c);
+        
+        // remove two last char (fault value + white space)
+        fault_prop[fault_prop.size() - 2].pop_back();
+        fault_prop[fault_prop.size() - 2].pop_back();
 
         complete_flist.push_back(fault_prop);
     }
-
 	return complete_flist;
 }
 
@@ -169,8 +180,7 @@ void faultRegistry::injectFaultList(const vector<vector<string>>& fualtList, int
 
 }
 void faultRegistry::disp_faultList(vector<vector<string>>& fualtList){
-    // the last complete_flist item is dummy
-    for(int i = 0; i < fualtList.size() - 1; i++){
+    for(int i = 0; i < fualtList.size(); i++){
 
         std::cout << "On line " << i << " of fault list there is fault with description below: " << std::endl;
 
@@ -179,7 +189,8 @@ void faultRegistry::disp_faultList(vector<vector<string>>& fualtList){
 			"@ testbench: ",
 			"@ design under test: ",
 			"@ module name: ",
-			"@ port name: "
+			"@ port name: ",
+            "@ stuck at value: "
 			};
         for(vector<string>::iterator it = fualtList[i].begin(); it != fualtList[i].end(); it++){
             std::cout << prop_name[j] << (*it) << std::endl;
