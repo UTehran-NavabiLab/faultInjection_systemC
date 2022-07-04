@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/counter'
+rm -rf sc_main
+rm -rf *.vcd
+/usr/local/bin/g++-11 -L /usr/local/systemc-2.3.3/lib -I /usr/local/systemc-2.3.3/include/ -l systemc sc_main.cpp -o sc_main
+./sc_main
+make: Leaving directory `/Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/counter'
+ 

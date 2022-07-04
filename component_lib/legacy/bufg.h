@@ -4,9 +4,9 @@
 #include "FIM.h"
 using namespace std;
 
-class pin : public SC_MODULE_FAULTABLE {
+class bufg : public SC_MODULE_FAULTABLE {
 protected:
-	string hardwareObjectId;
+
 	faultRegistry* accessRegistry;
 	
 public:
@@ -15,12 +15,12 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(pin);
-	pin(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(bufg);
+	bufg(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
-        hardwareObjectId = _name
+        hardwareObjectId = _name;
 		
 		// Define faults
 		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
@@ -30,14 +30,14 @@ public:
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
 
-		SC_METHOD(prc_Original_pin);
+		SC_METHOD(prc_Original_bufg);
 		sensitive << in1 << faultInjected;
 	}
 
 	// Incorporate faults in the functionality
-	void prc_Original_pin(){
+	void prc_Original_bufg(){
 		
-		cout << "fault on in1 = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << endl;
+		cout << "fault on " << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << endl;
 			
 		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
 			out1 = in1;

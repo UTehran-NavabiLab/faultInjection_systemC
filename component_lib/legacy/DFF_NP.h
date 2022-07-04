@@ -17,7 +17,6 @@ public:
 
     SC_HAS_PROCESS(DFF_NP0);
 	DFF_NP0(sc_module_name _name, faultRegistry* accessRegistryIn){
-        : sc_module(_name) {
 
         SC_THREAD(eval);
             sensitive << val;
@@ -61,7 +60,6 @@ public:
 
     SC_HAS_PROCESS(DFF_NP1);
 	DFF_NP1(sc_module_name _name, faultRegistry* accessRegistryIn){
-    : sc_module(_name) {
     // DFlipFlop(sc_module_name _name, sc_time tphl, sc_time tplh) 
     // : sc_module(_name), tphl(tphl), tplh(tplh) {
 

@@ -6,7 +6,7 @@ using namespace std;
 
 class dff : public SC_MODULE_FAULTABLE {
 protected:
-	string hardwareObjectId;
+
 	faultRegistry* accessRegistry;
 	
 public:
@@ -22,7 +22,7 @@ public:
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
-        hardwareObjectId = _name
+        hardwareObjectId = _name;
 		
 		// Define faults
 		faults[0].setFaultProperty(hardwareObjectId,"D",1,SA0); //objId:1 for D
@@ -52,7 +52,7 @@ public:
     
 	void faultable_set(void){
 		
-		cout << "fault on D = " << accessRegistry->getObjectFaultType(hardwareObjectId,"D") << " --- Time: " << sc_time_stamp() << endl;
+		cout << "fault on " << hardwareObjectId << " D = " << accessRegistry->getObjectFaultType(hardwareObjectId,"D") << " --- Time: " << sc_time_stamp() << endl;
 		
         if ((C->read() == SC_LOGIC_1) && ((PRE->read() == SC_LOGIC_0) && (CLR->read() == SC_LOGIC_0 && global_reset->read() == SC_LOGIC_0))){
             if (NbarT->read() == SC_LOGIC_1) 

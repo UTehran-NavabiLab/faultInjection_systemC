@@ -6,7 +6,7 @@ using namespace std;
 
 class notg : public SC_MODULE_FAULTABLE {
 protected:
-	string hardwareObjectId;
+
 	faultRegistry* accessRegistry;
 	
 public:
@@ -28,7 +28,7 @@ public:
 		// - all I care (and use) is getObjectFaultType
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
-        hardwareObjectId = _name
+        hardwareObjectId = _name;
 		
 		// Define faults
 		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
@@ -45,7 +45,7 @@ public:
 	// Incorporate faults in the functionality
 	void prc_Original_notg(){
 		
-		cout << "fault on in1 = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << endl;
+		cout << "fault on " << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << endl;
 			
 		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
 			if (in1->read() == SC_LOGIC_1){

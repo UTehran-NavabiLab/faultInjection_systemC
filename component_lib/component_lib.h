@@ -5,8 +5,8 @@
 
 // TODO: parametrize gates
 
-#ifndef __GATES_H__
-#define __GATES_H__
+#ifndef __COMPONENT_LIB_H__
+#define __COMPONENT_LIB_H__
 
 /////////////////////////////////////////////////////////////////////////////////////
 //    Buf
