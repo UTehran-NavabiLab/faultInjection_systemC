@@ -63,8 +63,8 @@ public:
 	void disp_faultList(vector<vector<string>>& faultList);
 	void infStuckAt();
 	vector<vector<string>> readFaultList(ifstream& faultList);
-	void injectFaultList(const vector<vector<string>>& faultList, int num_fault);
-	void removeFaultList(const vector<vector<string>>& faultList, int num_fault);
+	void injectFaultList(const vector<vector<string>>& faultList, int faultNumber);
+	void removeFaultList(const vector<vector<string>>& faultList, int faultNumber);
 };
 
 void faultRegistry::registerModule(SC_MODULE_FAULTABLE* regModule) {
@@ -177,10 +177,11 @@ vector<vector<string>> faultRegistry::readFaultList(ifstream& faultList){
 	return complete_flist;
 }
 
-void faultRegistry::injectFaultList(const vector<vector<string>>& faultList, int num_fault){
+void faultRegistry::injectFaultList(const vector<vector<string>>& faultList, int faultNumber){
 	
 	// { testbench, dut, module, obj, fault_type }
 	string fault_properties[5];
+
 	const string fault_p_title[] = {
 		"testbench: ",
 		"dut: ",
@@ -189,36 +190,82 @@ void faultRegistry::injectFaultList(const vector<vector<string>>& faultList, int
 		"faultType: "
 	};
 
-	// traverse each line (fault)
-	for(int i=0; i < faultList.size(); i++){
-		// traverse fault properties
-		for(int j=0; j < faultList[i].size(); j++){
-			fault_properties[j] = faultList[i][j];
-			std::cout << fault_p_title[j] << fault_properties[j] << std::endl;
-		}
+	if(faultNumber <= faultList.size()){
+		std::cout << "Fault to be injected: " << std::endl;
+		if(faultNumber == 0){ // if (fualtNumber == 0) inject all faults
+			// traverse each line (fault)
+			for(int i=0; i < faultList.size(); i++){
+				// traverse fault properties
+				for(int j=0; j < faultList[i].size(); j++){
+					fault_properties[j] = faultList[i][j];
+					std::cout << fault_p_title[j] << fault_properties[j] << std::endl;
+				}
 
-		if(fault_properties[4] == "0")
-			this->saboteurOn(fault_properties[2],fault_properties[3],SA0);
-		if(fault_properties[4] == "1")
-			this->saboteurOn(fault_properties[2],fault_properties[3],SA1);
+				if(fault_properties[4] == "0")
+					this->saboteurOn(fault_properties[2],fault_properties[3],SA0);
+				if(fault_properties[4] == "1")
+					this->saboteurOn(fault_properties[2],fault_properties[3],SA1);
+			}
+		} else { // if ( 0 < faultNumber < faultList.size() ) inject one specific fault
+			// traverse fault properties
+			for(int j=0; j < faultList[faultNumber - 1].size(); j++){
+				fault_properties[j] = faultList[faultNumber - 1][j];
+				std::cout << fault_p_title[j] << fault_properties[j] << std::endl;
+			}
+
+			if(fault_properties[4] == "0")
+				this->saboteurOn(fault_properties[2],fault_properties[3],SA0);
+			if(fault_properties[4] == "1")
+				this->saboteurOn(fault_properties[2],fault_properties[3],SA1);
+		}
+	} else { // if fault number is greater than fault list range
+		std::cout << "OUT OF RANGE ERROR: number exceeds range of fault list" << std::endl;
 	}
 }
 
-void faultRegistry::removeFaultList(const vector<vector<string>>& faultList, int num_fault){
+void faultRegistry::removeFaultList(const vector<vector<string>>& faultList, int faultNumber){
 	
 	// { testbench, dut, module, obj, fault_type }
 	string fault_properties[5];
 
-	// traverse each line (fault)
-	for(int i=0; i < faultList.size(); i++){
-		// traverse fault properties
-		for(int j=0; j < faultList[i].size(); j++){
-			fault_properties[j] = faultList[i][j];
+	const string fault_p_title[] = {
+		"testbench: ",
+		"dut: ",
+		"module: ",
+		"obj: ",
+		"faultType: "
+	};
+
+	if(faultNumber <= faultList.size()){
+		std::cout << "Fault to be removed: " << std::endl;
+		if(faultNumber == 0){ // if (fualtNumber == 0) inject all faults
+			// traverse each line (fault)
+			for(int i=0; i < faultList.size(); i++){
+				// traverse fault properties
+				for(int j=0; j < faultList[i].size(); j++){
+					fault_properties[j] = faultList[i][j];
+					std::cout << fault_p_title[j] << fault_properties[j] << std::endl;
+				}
+
+				if(fault_properties[4] == "0")
+					this->saboteurOff(fault_properties[2],fault_properties[3],SA0);
+				if(fault_properties[4] == "1")
+					this->saboteurOff(fault_properties[2],fault_properties[3],SA1);
+			}
+		} else { // if ( 0 < faultNumber < faultList.size() ) inject one specific fault
+			// traverse fault properties
+			for(int j=0; j < faultList[faultNumber - 1].size(); j++){
+				fault_properties[j] = faultList[faultNumber - 1][j];
+				std::cout << fault_p_title[j] << fault_properties[j] << std::endl;
+			}
+
+			if(fault_properties[4] == "0")
+				this->saboteurOff(fault_properties[2],fault_properties[3],SA0);
+			if(fault_properties[4] == "1")
+				this->saboteurOff(fault_properties[2],fault_properties[3],SA1);
 		}
-		if(fault_properties[4] == "0")
-			this->saboteurOff(fault_properties[2],fault_properties[3],SA0);
-		if(fault_properties[4] == "1")
-			this->saboteurOff(fault_properties[2],fault_properties[3],SA1);
+	} else { // if fault number is greater than fault list range
+		std::cout << "OUT OF RANGE ERROR: number exceeds range of fault list" << std::endl;
 	}
 }
 

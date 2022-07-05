@@ -13,7 +13,7 @@
 //    Buf
 /////////////////////////////////////////////////////////////////////////////////////
 
-class bufg : public SC_MODULE_FAULTABLE {
+class bufg_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -24,8 +24,8 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(bufg);
-	bufg(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(bufg_flt);
+	bufg_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -68,7 +68,7 @@ public:
 //    Not
 /////////////////////////////////////////////////////////////////////////////////////
 
-class notg : public SC_MODULE_FAULTABLE {
+class notg_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -79,8 +79,8 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(notg);
-	notg(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(notg_flt);
+	notg_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		// - why would i call registerModule and get a an ID from it
 		// 		i'm the lowest level of hierarchy, 
@@ -135,7 +135,7 @@ public:
 //    And
 /////////////////////////////////////////////////////////////////////////////////////
 
-class and_n : public SC_MODULE_FAULTABLE {
+class and_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -146,8 +146,8 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(and_n);
-	and_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(and_n_flt);
+	and_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -205,7 +205,7 @@ public:
 //    Or
 /////////////////////////////////////////////////////////////////////////////////////
 
-class or_n : public SC_MODULE_FAULTABLE {
+class or_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -216,8 +216,8 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(or_n);
-	or_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(or_n_flt);
+	or_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -276,7 +276,7 @@ public:
 //    Nand
 /////////////////////////////////////////////////////////////////////////////////////
 
-class nand_n : public SC_MODULE_FAULTABLE {
+class nand_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -287,8 +287,8 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(nand_n);
-	nand_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(nand_n_flt);
+	nand_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -356,7 +356,7 @@ public:
 //    Nor
 /////////////////////////////////////////////////////////////////////////////////////
 
-class nor_n : public SC_MODULE_FAULTABLE {
+class nor_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -367,8 +367,8 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(nor_n);
-	nor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(nor_n_flt);
+	nor_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -439,7 +439,7 @@ public:
 //    Xor
 /////////////////////////////////////////////////////////////////////////////////////
 
-class xor_n : public SC_MODULE_FAULTABLE {
+class xor_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -450,8 +450,8 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(xor_n);
-	xor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(xor_n_flt);
+	xor_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -532,7 +532,7 @@ public:
 //    Xnor
 /////////////////////////////////////////////////////////////////////////////////////
 
-class xnor_n : public SC_MODULE_FAULTABLE {
+class xnor_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -543,8 +543,8 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(xnor_n);
-	xnor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(xnor_n_flt);
+	xnor_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -625,7 +625,7 @@ public:
 //    Primary Input      
 /////////////////////////////////////////////////////////////////////////////////////
 
-class pin : public SC_MODULE_FAULTABLE {
+class pin_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -636,8 +636,8 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(pin);
-	pin(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(pin_flt);
+	pin_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -681,7 +681,7 @@ public:
 //    Primary Output      
 /////////////////////////////////////////////////////////////////////////////////////
 
-class pout : public SC_MODULE_FAULTABLE {
+class pout_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -692,8 +692,8 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(pout);
-	pout(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(pout_flt);
+	pout_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -737,7 +737,7 @@ public:
 //    D Flip Flop 
 /////////////////////////////////////////////////////////////////////////////////////
 
-class dff : public SC_MODULE_FAULTABLE {
+class dff_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -750,8 +750,8 @@ public:
 
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(dff);
-	dff(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(dff_flt);
+	dff_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
 		accessRegistry->registerModule(this);
@@ -818,9 +818,9 @@ public:
 };
 
 /////////////////////////////////////////////////////////////////////////////////////
-//    D Flip Flop: DFF_NP0
+//    D Flip Flop: DFF_NP0_flt
 /////////////////////////////////////////////////////////////////////////////////////
-class DFF_NP0 : public SC_MODULE_FAULTABLE {
+class DFF_NP0_flt : public SC_MODULE_FAULTABLE {
 public:
     sc_in<sc_logic> D, C, R;
     sc_out<sc_logic> Q;
@@ -831,8 +831,8 @@ public:
     // sc_time tphl; 
     // sc_time tplh;
 
-    SC_HAS_PROCESS(DFF_NP0);
-	DFF_NP0(sc_module_name _name, faultRegistry* accessRegistryIn){
+    SC_HAS_PROCESS(DFF_NP0_flt);
+	DFF_NP0_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 
         SC_THREAD(eval);
             sensitive << val;
@@ -861,9 +861,9 @@ public:
 };
 
 /////////////////////////////////////////////////////////////////////////////////////
-//    D Flip Flop: DFF_NP1
+//    D Flip Flop: DFF_NP1_flt
 /////////////////////////////////////////////////////////////////////////////////////
-class DFF_NP1 : public SC_MODULE_FAULTABLE {
+class DFF_NP1_flt : public SC_MODULE_FAULTABLE {
 public:
     sc_in<sc_logic> D, C, R;
     sc_out<sc_logic> Q;
@@ -874,8 +874,8 @@ public:
     // sc_time tphl; 
     // sc_time tplh;
 
-    SC_HAS_PROCESS(DFF_NP1);
-	DFF_NP1(sc_module_name _name, faultRegistry* accessRegistryIn){
+    SC_HAS_PROCESS(DFF_NP1_flt);
+	DFF_NP1_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
     // DFlipFlop(sc_module_name _name, sc_time tphl, sc_time tplh) 
     // : sc_module(_name), tphl(tphl), tplh(tplh) {
 
