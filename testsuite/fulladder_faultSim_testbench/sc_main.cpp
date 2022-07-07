@@ -4,7 +4,7 @@
 int sc_main(int argc, char* argv[]){
     // creating fault regitry class
     faultRegistry* accessRegistry = new faultRegistry();
-    testbench* fulladder_tb = new testbench("testbench", accessRegistry);
+    testbench* fulladder_tb = new testbench("fulladder_tb", accessRegistry);
     
     std::cout << "testbench created" << std::endl;
 

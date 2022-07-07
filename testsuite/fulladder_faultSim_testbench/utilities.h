@@ -1,6 +1,8 @@
-#include <systemc>
+#include "systemc.h"
 #include <string>
 #include <iterator>
+#include <vector>
+#include <sstream>
 
 
 // @define: templated function to convert string to logic vector 

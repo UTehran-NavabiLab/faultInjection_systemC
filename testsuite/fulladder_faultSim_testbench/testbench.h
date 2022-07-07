@@ -1,7 +1,5 @@
 #include "systemc.h"
 #include "js2sc.h"
-#include "fulladder_gold.h"
-#include "utilities.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -18,7 +16,7 @@ SC_MODULE(testbench){
     sc_signal<sc_lv<3>> outputs_gdut;
 
     fulladder* fdut;
-    fulladder_gold* gdut;
+    fulladder* gdut;
 
     faultRegistry* accessRegistry;
 
@@ -34,13 +32,13 @@ SC_MODULE(testbench){
 
         std::cout << "testbench: counter declaration begins" << std::endl;
         
-        gdut = new fulladder_gold("fulladder_gold");
+        gdut = new fulladder("fulladder_gold", accessRegistry);
             gdut->i0(i0);
             gdut->i1(i1);
             gdut->ci(ci);
             gdut->s(s_gdut);
             gdut->co(co_gdut);
-        fdut = new fulladder("fulladder_faultable", accessRegistry);
+        fdut = new fulladder("FA_NET", accessRegistry);
             fdut->i0(i0);
             fdut->i1(i1);
             fdut->ci(ci);
@@ -95,6 +93,12 @@ SC_MODULE(testbench){
         testFile.close();
 
         reportFile.open("reportFile.txt");
+        
+        accessRegistry->infFaults();
+        accessRegistry->removeFaultList(flist, 0);
+        wait(SC_ZERO_TIME);
+        std::cout << "initial fault to Nofault:---------------------" << std::endl;
+        accessRegistry->infFaults();
 
         //--- Outer loop to inject file ----------------------
         for(int i=1; i <= flist.size(); i++){
@@ -128,7 +132,6 @@ SC_MODULE(testbench){
                 numOfDetecteds++;
             
             accessRegistry->removeFaultList(flist, i); 
-            wait(1, SC_NS);   
             std::cout << "remove fault:--------------------- " << std::endl;
         }//--- endfor: faultlist
 

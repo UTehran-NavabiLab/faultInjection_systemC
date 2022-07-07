@@ -1,4 +1,5 @@
 #include <systemc.h>
+#include <string>
 #include "component_flt_lib.h"
 
 using namespace sc_core;
@@ -53,7 +54,8 @@ SC_MODULE( fulladder ) {
     pout_flt* pout_18;
 
 SC_HAS_PROCESS(fulladder);
-	fulladder(sc_module_name _name, faultRegistry* accessRegistry){
+fulladder(sc_module_name _name, faultRegistry* accessRegistry){
+        
     nor_n_0 = new nor_n_flt("nor_n_0", accessRegistry);
         nor_n_0->in1[0](S12);
         nor_n_0->in1[1](S15);

@@ -1,9 +1,12 @@
-#include "systemc.h"
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
 #include <sstream>
+
+#include "systemc.h"
+#include "utilities.h"
+
 
 using namespace std;
 
@@ -14,14 +17,40 @@ enum Faults { SA0, SA1, BitFlip, NoFault };
 
 SC_MODULE(SC_MODULE_FAULTABLE) {
 public:
+	string testbenchId;
+	string designId;
 	string hardwareObjectId;
 	sc_signal <bool> faultInjected;
 	SC_MODULE_FAULTABLE() {}
 };
 
+const vector<string> getModuleName(SC_MODULE_FAULTABLE* regModule){
+	string full_name;
+	vector<string> name;
+
+	full_name = regModule->name();
+
+	// convert string to stringstream to use stream properties (here getline)
+	stringstream sstream(full_name);
+	string tempString;
+	while(getline(sstream, tempString, '.')){
+		name.push_back(tempString);
+	}
+
+	std::cout << "getmodule name: ----" << std::endl;
+	for(vector<string>::iterator it = name.begin(); it != name.end(); it++){
+		std::cout << (*it) << std::endl;
+	}
+	std::cout << "getmodule name ends: ----" << std::endl;
+	
+	return name;
+}
+
 
 class faultProperty{
 private:
+	string testbenchId;
+	string designId;
 	string moduleId;
 	int faultId;
 	string objId;
@@ -29,14 +58,21 @@ private:
 	bool enable;
 public:
 	faultProperty(){};
-	faultProperty(string moduleId, string objId, int faultId, Faults faultType) :moduleId{ moduleId }, objId{ objId }, faultId{ faultId }, faultType{ faultType }, enable(0) {}
-	void setFaultProperty(string moduleId, string objId, int faultId, Faults faultType){
+	faultProperty(string testbenchId, string designId, string moduleId, 
+		string objId, int faultId, Faults faultType) 
+			:moduleId{ moduleId }, objId{ objId }, faultId{ faultId }, faultType{ faultType }, enable(0) {}
+	
+	void setFaultProperty(string testbenchId, string designId, string moduleId, string objId, int faultId, Faults faultType){
+		this->testbenchId = testbenchId; 
+		this->designId = designId; 
 		this->moduleId = moduleId; 
 		this->objId = objId; 
 		this->faultId = faultId; 
 		this->faultType = faultType; 
 		this->enable = 0;
 	}
+	string getTestbenchId(){ return testbenchId; }
+	string getDesignId(){ return designId; }
 	string getModuleId(){ return moduleId; }
 	string getObjId(){return objId;}
 	int getFaultId(){return faultId;}
@@ -55,23 +91,25 @@ private:
 public:
 	void registerModule(SC_MODULE_FAULTABLE* regModule);
 	void registerFault(faultProperty* regFault);
-	void saboteurOn(string moduleId, string objId, Faults faultType); //search, find, enable
-	void saboteurOff(string moduleId, string objId, Faults faultType); //search, find, disable
-	int getFaultId(string moduleId, string objId, Faults faultType); //search, find, getFaultType
-	Faults getObjectFaultType(string moduleId, string objId); //search, find, if enabled getFaultType
+	void saboteurOn(string testbenchId, string designId, string moduleId, string objId, Faults faultType); //search, find, enable
+	void saboteurOff(string testbenchId, string designId, string moduleId, string objId, Faults faultType); //search, find, disable
+	int getFaultId(string testbenchId, string designId, string moduleId, string objId, Faults faultType); //search, find, getFaultType
+	Faults getObjectFaultType(string testbenchId, string designId, string moduleId, string objId); //search, find, if enabled getFaultType
 	void infFaults();
 	void disp_faultList(vector<vector<string>>& faultList);
 	void infStuckAt();
 	vector<vector<string>> readFaultList(ifstream& faultList);
 	void injectFaultList(const vector<vector<string>>& faultList, int faultNumber);
 	void removeFaultList(const vector<vector<string>>& faultList, int faultNumber);
+	bool is_module_faulty(string testbenchId, string designId, string moduleId);
+	bool is_object_faulty(string testbenchId, string designId, string moduleId, string objId);
 };
 
 void faultRegistry::registerModule(SC_MODULE_FAULTABLE* regModule) {
 	moduleVector.push_back(regModule);
-	string moduleId = regModule->hardwareObjectId;
-	moduleIdVector.push_back(moduleId);
-	// string moduleId = moduleVector.size()-1;
+	string hierarchical_name = regModule->testbenchId + "." + regModule->designId + "." + regModule->hardwareObjectId;
+	std::cout << "registerModule: " << hierarchical_name << std::endl;
+	moduleIdVector.push_back(hierarchical_name);
 }
 
 void faultRegistry::registerFault(faultProperty* regFault) {
@@ -79,13 +117,19 @@ void faultRegistry::registerFault(faultProperty* regFault) {
 }
 
 void faultRegistry::infFaults(){
-	for(int i=0; i<faultVector.size(); i++)
-		cout << "moduleId:" << faultVector[i]->getModuleId() 
-		<< " objId:" << faultVector[i]->getObjId() 
-		<< " faultId:" << faultVector[i]->getFaultId()
-		<< " type:" << faultVector[i]->getFaultType() 
-		<< " enable:" << faultVector[i]->getEnable()
-		<< endl;
+	std::cout << "end of fault information" << endl;
+	for(int i=0; i<faultVector.size(); i++){
+
+		cout << "getTestbenchId:" << faultVector[i]->getTestbenchId()  << endl
+		<< "getDesignId:" << faultVector[i]->getDesignId()  << endl
+		<< "moduleId:" << faultVector[i]->getModuleId()  << endl
+		<< " objId:" << faultVector[i]->getObjId()  << endl
+		<< " faultId:" << faultVector[i]->getFaultId() << endl
+		<< " type:" << faultVector[i]->getFaultType()  << endl
+		<< " enable:" << faultVector[i]->getEnable() << endl;
+		std::cout << "+++++++++++++" << endl;
+	}
+	std::cout << "end of fault information" << endl;
 }
 
 void faultRegistry::infStuckAt(){
@@ -101,42 +145,102 @@ void faultRegistry::infStuckAt(){
 	}
 }
 
-void faultRegistry::saboteurOn(string moduleId, string objId, Faults faultType){
+void faultRegistry::saboteurOn(string testbenchId, string designId, string moduleId, string objId, Faults faultType){
 	for(int i=0; i<faultVector.size(); i++){
-		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getFaultType() == faultType)){
+		if((faultVector[i]->getTestbenchId() == testbenchId) && (faultVector[i]->getDesignId() == designId) && 
+			(faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && 
+			(faultVector[i]->getFaultType() == faultType)){
+			
 			faultVector[i]->enableFault();	//Activate fault
+
+			std::cout << "faultVector of " << std::endl;
+			std::cout << faultVector[i]->getTestbenchId() <<  " = " << testbenchId << std::endl;
+			std::cout << faultVector[i]->getDesignId() <<  " = " << designId << std::endl;
+			std::cout << faultVector[i]->getModuleId() <<  " = " << moduleId << std::endl;
+			std::cout << faultVector[i]->getObjId() <<  " = " << objId << std::endl;
+			std::cout << faultVector[i]->getFaultType() <<  " = " << faultType << std::endl;
+			std::cout << "enabled ----------------------- " << std::endl;
+
+
 		}
 	}
+	
+	string hierarchical_name = testbenchId + "." + designId + "." + moduleId;	
+	
 	for (int j=0; j<moduleIdVector.size(); j++){
-		if(moduleIdVector[j] == moduleId)
+		if(moduleIdVector[j] == hierarchical_name){
+
+			std::cout << "faultInjected signal on module " << std::endl;
 			moduleVector[j]->faultInjected.write(true); // Inject fault
+			std::cout << hierarchical_name << std::endl;
+			std::cout << moduleIdVector[j] << std::endl;
+			std::cout << moduleVector[j]->hardwareObjectId << std::endl;
+			std::cout << "enabled -------------------- " << std::endl;
+		}
+
 	}
 }
 
-void faultRegistry::saboteurOff(string moduleId, string objId, Faults faultType){
+void faultRegistry::saboteurOff(string testbenchId, string designId, string moduleId, string objId, Faults faultType){
 	for(int i=0; i<faultVector.size(); i++){
-		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getFaultType() == faultType)){
+		if((faultVector[i]->getTestbenchId() == testbenchId) && (faultVector[i]->getDesignId() == designId) && 
+			(faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && 
+			(faultVector[i]->getFaultType() == faultType)){
+			
 			faultVector[i]->disableFault();
 		}
 	}
+
+	string hierarchical_name = testbenchId + "." + designId + "." + moduleId;	
 	for (int j=0; j<moduleIdVector.size(); j++){
-		if(moduleIdVector[j] == moduleId)
+		if(moduleIdVector[j] == hierarchical_name)
 			moduleVector[j]->faultInjected.write(false); // deactivate fault
 	}	
 }
 
-int faultRegistry::getFaultId(string moduleId, string objId, Faults faultType){
+bool faultRegistry::is_module_faulty(string testbenchId, string designId, string moduleId){
+	bool fault_enable = false;
+
 	for(int i=0; i<faultVector.size(); i++){
-		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getFaultType() == faultType))
-			return faultVector[i]->getFaultId();
+			if((faultVector[i]->getTestbenchId() == testbenchId) && (faultVector[i]->getDesignId() == designId) && 
+				(faultVector[i]->getModuleId() == moduleId)){
+
+					fault_enable = fault_enable || faultVector[i]->getEnable();
+				}
+	}	
+	return fault_enable;
+}
+
+bool faultRegistry::is_object_faulty(string testbenchId, string designId, string moduleId, string objId){
+	bool fault_enable = false;
+
+	for(int i=0; i<faultVector.size(); i++){
+			if((faultVector[i]->getTestbenchId() == testbenchId) && (faultVector[i]->getDesignId() == designId) && 
+				(faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId)){
+
+					fault_enable = fault_enable || faultVector[i]->getEnable();
+				}
+	}	
+	return fault_enable;
+}
+int faultRegistry::getFaultId(string testbenchId, string designId, string moduleId, string objId, Faults faultType){
+	for(int i=0; i<faultVector.size(); i++){
+		if((faultVector[i]->getTestbenchId() == testbenchId) && (faultVector[i]->getDesignId() == designId) && 
+			(faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && 
+			(faultVector[i]->getFaultType() == faultType)){
+				return faultVector[i]->getFaultId();
+
+			}
 	}
 	return NoFault;
 }
 
-Faults faultRegistry::getObjectFaultType(string moduleId, string objId){
+Faults faultRegistry::getObjectFaultType(string testbenchId, string designId, string moduleId, string objId){
 	for(int i=0; i<faultVector.size(); i++){
-		if((faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) &&(faultVector[i]->getEnable() == true))
-			return faultVector[i]->getFaultType();
+		if((faultVector[i]->getTestbenchId() == testbenchId) && (faultVector[i]->getDesignId() == designId) && 
+			(faultVector[i]->getModuleId() == moduleId) && (faultVector[i]->getObjId() == objId) && (faultVector[i]->getEnable() == true)){
+				return faultVector[i]->getFaultType();
+			}
 	}
 	return NoFault;
 }
@@ -202,9 +306,9 @@ void faultRegistry::injectFaultList(const vector<vector<string>>& faultList, int
 				}
 
 				if(fault_properties[4] == "0")
-					this->saboteurOn(fault_properties[2],fault_properties[3],SA0);
+					this->saboteurOn(fault_properties[0], fault_properties[1], fault_properties[2], fault_properties[3],SA0);
 				if(fault_properties[4] == "1")
-					this->saboteurOn(fault_properties[2],fault_properties[3],SA1);
+					this->saboteurOn(fault_properties[0], fault_properties[1], fault_properties[2], fault_properties[3],SA1);
 			}
 		} else { // if ( 0 < faultNumber < faultList.size() ) inject one specific fault
 			// traverse fault properties
@@ -214,9 +318,9 @@ void faultRegistry::injectFaultList(const vector<vector<string>>& faultList, int
 			}
 
 			if(fault_properties[4] == "0")
-				this->saboteurOn(fault_properties[2],fault_properties[3],SA0);
+				this->saboteurOn(fault_properties[0], fault_properties[1], fault_properties[2], fault_properties[3],SA0);
 			if(fault_properties[4] == "1")
-				this->saboteurOn(fault_properties[2],fault_properties[3],SA1);
+				this->saboteurOn(fault_properties[0], fault_properties[1], fault_properties[2], fault_properties[3],SA1);
 		}
 	} else { // if fault number is greater than fault list range
 		std::cout << "OUT OF RANGE ERROR: number exceeds range of fault list" << std::endl;
@@ -248,9 +352,9 @@ void faultRegistry::removeFaultList(const vector<vector<string>>& faultList, int
 				}
 
 				if(fault_properties[4] == "0")
-					this->saboteurOff(fault_properties[2],fault_properties[3],SA0);
+					this->saboteurOff(fault_properties[0], fault_properties[1], fault_properties[2],fault_properties[3],SA0);
 				if(fault_properties[4] == "1")
-					this->saboteurOff(fault_properties[2],fault_properties[3],SA1);
+					this->saboteurOff(fault_properties[0], fault_properties[1], fault_properties[2],fault_properties[3],SA1);
 			}
 		} else { // if ( 0 < faultNumber < faultList.size() ) inject one specific fault
 			// traverse fault properties
@@ -260,9 +364,9 @@ void faultRegistry::removeFaultList(const vector<vector<string>>& faultList, int
 			}
 
 			if(fault_properties[4] == "0")
-				this->saboteurOff(fault_properties[2],fault_properties[3],SA0);
+				this->saboteurOff(fault_properties[0], fault_properties[1], fault_properties[2],fault_properties[3],SA0);
 			if(fault_properties[4] == "1")
-				this->saboteurOff(fault_properties[2],fault_properties[3],SA1);
+				this->saboteurOff(fault_properties[0], fault_properties[1], fault_properties[2],fault_properties[3],SA1);
 		}
 	} else { // if fault number is greater than fault list range
 		std::cout << "OUT OF RANGE ERROR: number exceeds range of fault list" << std::endl;
