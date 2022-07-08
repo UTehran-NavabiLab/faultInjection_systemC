@@ -252,6 +252,7 @@ public:
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
 		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
 		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
 		accessRegistry->registerModule(this);
 		
 		// Register faults
@@ -330,6 +331,7 @@ public:
 		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
 		
 		accessRegistry->registerModule(this);
+		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
@@ -503,6 +505,7 @@ public:
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
 		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
 		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
 		accessRegistry->registerModule(this);
 		
 		// Register faults
@@ -602,6 +605,7 @@ public:
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
 		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
 		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
 		accessRegistry->registerModule(this);
 		
 		// Register faults
@@ -688,20 +692,19 @@ public:
 	pin_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-        vector<string> full_name = getModuleName(this);
-
+        
+		vector<string> full_name = getModuleName(this);
         testbenchId = full_name[0];
         designId = full_name[1];
         hardwareObjectId = full_name[2];
         
-        
-		
 		// Define faults
 		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
 		
-		// Register faults
 		accessRegistry->registerModule(this);
+		
+		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
 
@@ -751,20 +754,19 @@ public:
 	pout_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-        vector<string> full_name = getModuleName(this);
 
+        vector<string> full_name = getModuleName(this);
         testbenchId = full_name[0];
         designId = full_name[1];
         hardwareObjectId = full_name[2];
         
-        
-		
 		// Define faults
 		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
 		
-		// Register faults
 		accessRegistry->registerModule(this);
+		
+		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
 
@@ -816,20 +818,19 @@ public:
 	dff_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-        vector<string> full_name = getModuleName(this);
 
+        vector<string> full_name = getModuleName(this);
         testbenchId = full_name[0];
         designId = full_name[1];
         hardwareObjectId = full_name[2];
         
-        
-		
 		// Define faults
 		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"D",1,SA0); //objId:1 for D
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"D",2,SA1);
 		
-		// Register faults
 		accessRegistry->registerModule(this);
+
+		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
         

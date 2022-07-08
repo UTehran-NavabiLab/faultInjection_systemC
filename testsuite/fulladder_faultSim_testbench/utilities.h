@@ -1,4 +1,3 @@
-#include "systemc.h"
 #include <string>
 #include <iterator>
 #include <vector>
