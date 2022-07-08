@@ -13,7 +13,7 @@
 //    Buf
 /////////////////////////////////////////////////////////////////////////////////////
 
-class bufg : public SC_MODULE_FAULTABLE {
+class bufg_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -24,16 +24,21 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(bufg);
-	bufg(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(bufg_flt);
+	bufg_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        
+		vector<string> full_name = getModuleName(this);
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
-		faults[1].setFaultProperty(hardwareObjectId,"in1",2,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -41,22 +46,23 @@ public:
 
 		SC_METHOD(prc_Original_bufg);
 		sensitive << in1 << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_bufg(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			out1 = in1;
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA0)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA0)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA1)
 				out1 = SC_LOGIC_1;
 			else
 				out1 = SC_LOGIC_X;
@@ -68,7 +74,7 @@ public:
 //    Not
 /////////////////////////////////////////////////////////////////////////////////////
 
-class notg : public SC_MODULE_FAULTABLE {
+class notg_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -79,8 +85,8 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(notg);
-	notg(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(notg_flt);
+	notg_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		// - why would i call registerModule and get a an ID from it
 		// 		i'm the lowest level of hierarchy, 
@@ -91,12 +97,17 @@ public:
 		// - why should I set fault for myself, i'm not to decide somebody else should make that decision
 		// - all I care (and use) is getObjectFaultType
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
-		
+        
+		vector<string> full_name = getModuleName(this);
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
-		faults[1].setFaultProperty(hardwareObjectId,"in1",2,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -104,13 +115,14 @@ public:
 
 		SC_METHOD(prc_Original_notg);
 		sensitive << in1 << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_notg(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			if (in1->read() == SC_LOGIC_1){
 				out1->write(SC_LOGIC_0);
 			} else if (in1->read() == SC_LOGIC_0){
@@ -118,12 +130,12 @@ public:
 			}
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA0)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA0)
 				out1 = SC_LOGIC_1;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA1)
 				out1 = SC_LOGIC_0;
 			else
 				out1 = SC_LOGIC_X;
@@ -135,7 +147,7 @@ public:
 //    And
 /////////////////////////////////////////////////////////////////////////////////////
 
-class and_n : public SC_MODULE_FAULTABLE {
+class and_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -146,18 +158,25 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(and_n);
-	and_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(and_n_flt);
+	and_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        
+		vector<string> full_name = getModuleName(this);
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
+        
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -167,31 +186,31 @@ public:
 
 		SC_METHOD(prc_Original_and_n);
 		sensitive << in1[0] << in1[1] << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_and_n(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			out1 = in1[0] & in1[1];
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
-				<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+				<< accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 || accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0 || accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1 
+					&& accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_1;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1)
 				out1 = SC_LOGIC_1 & in1[1];
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = in1[0] & SC_LOGIC_1;
 			
 			else
@@ -205,7 +224,7 @@ public:
 //    Or
 /////////////////////////////////////////////////////////////////////////////////////
 
-class or_n : public SC_MODULE_FAULTABLE {
+class or_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -216,18 +235,25 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(or_n);
-	or_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(or_n_flt);
+	or_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        vector<string> full_name = getModuleName(this);
+
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
+        
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -237,31 +263,31 @@ public:
 
 		SC_METHOD(prc_Original_or_n);
 		sensitive << in1[0] << in1[1] << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_or_n(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			out1 = in1[0] | in1[1];
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
-				<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+				<< accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
 		
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 || accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1 || accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_1;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0 
+					&& accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_0;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0)
 				out1 = SC_LOGIC_0 | in1[1];
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = in1[0] | SC_LOGIC_0;
 			
 			else
@@ -276,7 +302,7 @@ public:
 //    Nand
 /////////////////////////////////////////////////////////////////////////////////////
 
-class nand_n : public SC_MODULE_FAULTABLE {
+class nand_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -287,18 +313,24 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(nand_n);
-	nand_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(nand_n_flt);
+	nand_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        vector<string> full_name = getModuleName(this);
+
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -308,14 +340,14 @@ public:
 
 		SC_METHOD(prc_Original_nand_n);
 		sensitive << in1[0] << in1[1] << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_nand_n(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			if ((in1[0]->read() == SC_LOGIC_1) && (in1[1]->read() == SC_LOGIC_1)){
 				out1->write(SC_LOGIC_0);
 			} else {
@@ -323,24 +355,24 @@ public:
 			}
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
-				<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+				<< accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 || accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0 || accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_1;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1 
+					&& accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_0;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1){
 
 				if (in1[1]->read() == SC_LOGIC_1)
 					out1 = SC_LOGIC_0;
 				else
 					out1 = SC_LOGIC_1;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1){
 				if (in1[0]->read() == SC_LOGIC_1)
 					out1 = SC_LOGIC_0;
 				else
@@ -356,7 +388,7 @@ public:
 //    Nor
 /////////////////////////////////////////////////////////////////////////////////////
 
-class nor_n : public SC_MODULE_FAULTABLE {
+class nor_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -367,18 +399,24 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(nor_n);
-	nor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(nor_n_flt);
+	nor_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        vector<string> full_name = getModuleName(this);
+
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
+        
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -388,14 +426,14 @@ public:
 
 		SC_METHOD(prc_Original_nor_n);
 		sensitive << in1[0] << in1[1] << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_nor_n(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			if ((in1[0]->read() == SC_LOGIC_0) && (in1[1]->read() == SC_LOGIC_0)){
 				out1->write(SC_LOGIC_1);
 			} else {
@@ -403,17 +441,17 @@ public:
 			}
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
-				<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+				<< accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 || accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1 || accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0 
+					&& accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_1;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0){
 
 				if (in1[1]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_1;
@@ -421,7 +459,7 @@ public:
 					out1 = SC_LOGIC_0;
 			}
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0){
 
 				if (in1[0]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_1;
@@ -439,7 +477,7 @@ public:
 //    Xor
 /////////////////////////////////////////////////////////////////////////////////////
 
-class xor_n : public SC_MODULE_FAULTABLE {
+class xor_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -450,18 +488,25 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(xor_n);
-	xor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(xor_n_flt);
+	xor_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        vector<string> full_name = getModuleName(this);
+
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
+        
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -471,14 +516,14 @@ public:
 
 		SC_METHOD(prc_Original_xor_n);
 		sensitive << in1[0] << in1[1] << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in1 the functionality
 	void prc_Original_xor_n(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			if (in1[0]->read() == in1[1]->read()){
 				out1->write(SC_LOGIC_1);
 			} else {
@@ -486,35 +531,35 @@ public:
 			}
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
-				<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+				<< accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 && accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1 && accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0 
+					&& accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_0;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0){
 				if (in1[1]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_0;
 				else
 					out1 = SC_LOGIC_1;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0){
 				if (in1[0]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_0;
 				else
 					out1 = SC_LOGIC_1;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1){
 				if (in1[1]->read() == SC_LOGIC_1)
 					out1 = SC_LOGIC_0;
 				else
 					out1 = SC_LOGIC_1;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1){
 				if (in1[0]->read() == SC_LOGIC_1)
 					out1 = SC_LOGIC_0;
 				else
@@ -532,7 +577,7 @@ public:
 //    Xnor
 /////////////////////////////////////////////////////////////////////////////////////
 
-class xnor_n : public SC_MODULE_FAULTABLE {
+class xnor_n_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -543,18 +588,25 @@ public:
 	
 	faultProperty faults[4];
 
-	SC_HAS_PROCESS(xnor_n);
-	xnor_n(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(xnor_n_flt);
+	xnor_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
+        vector<string> full_name = getModuleName(this);
+
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
+        
 		
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
-		faults[1].setFaultProperty(hardwareObjectId,"in1(0)",2,SA1);
-		faults[2].setFaultProperty(hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
-		faults[3].setFaultProperty(hardwareObjectId,"in1(1)",4,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",1,SA0); //objId:1 for in1[0]
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
+		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
+		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -564,14 +616,14 @@ public:
 
 		SC_METHOD(prc_Original_xnor_n);
 		sensitive << in1[0] << in1[1] << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in1 the functionality
 	void prc_Original_xnor_n(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == NoFault 
-			&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			if (in1[0]->read() == in1[1]->read()){
 				out1->write(SC_LOGIC_0);
 			} else {
@@ -579,35 +631,35 @@ public:
 			}
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
-				<< accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1[0] = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") << " --- fault on in1[1] = " 
+				<< accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1 && accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1 && accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1)
 				out1 = SC_LOGIC_1;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0 
-					&& accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0 
+					&& accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0)
 				out1 = SC_LOGIC_1;
 				
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA0){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA0){
 				if (in1[1]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_1;
 				else
 					out1 = SC_LOGIC_0;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA0){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA0){
 				if (in1[0]->read() == SC_LOGIC_0)
 					out1 = SC_LOGIC_1;
 				else
 					out1 = SC_LOGIC_0;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(0)") == SA1){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(0)") == SA1){
 				if (in1[1]->read() == SC_LOGIC_1)
 					out1 = SC_LOGIC_1;
 				else
 					out1 = SC_LOGIC_0;
 			}
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1(1)") == SA1){
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1(1)") == SA1){
 				if (in1[0]->read() == SC_LOGIC_1)
 					out1 = SC_LOGIC_1;
 				else
@@ -625,7 +677,7 @@ public:
 //    Primary Input      
 /////////////////////////////////////////////////////////////////////////////////////
 
-class pin : public SC_MODULE_FAULTABLE {
+class pin_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -636,16 +688,21 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(pin);
-	pin(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(pin_flt);
+	pin_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
-		
+        
+		vector<string> full_name = getModuleName(this);
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
-		faults[1].setFaultProperty(hardwareObjectId,"in1",2,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -653,22 +710,23 @@ public:
 
 		SC_METHOD(prc_Original_pin);
 		sensitive << in1 << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_pin(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			out1 = in1;
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA0)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA0)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA1)
 				out1 = SC_LOGIC_1;
 			else
 				out1 = SC_LOGIC_X;
@@ -681,7 +739,7 @@ public:
 //    Primary Output      
 /////////////////////////////////////////////////////////////////////////////////////
 
-class pout : public SC_MODULE_FAULTABLE {
+class pout_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -692,16 +750,21 @@ public:
 	
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(pout);
-	pout(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(pout_flt);
+	pout_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
-		
+
+        vector<string> full_name = getModuleName(this);
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"in1",1,SA0); //objId:1 for in1
-		faults[1].setFaultProperty(hardwareObjectId,"in1",2,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
+		
+		accessRegistry->registerModule(this);
 		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
@@ -709,22 +772,23 @@ public:
 
 		SC_METHOD(prc_Original_pout);
 		sensitive << in1 << faultInjected;
+			dont_initialize();
 	}
 
 	// Incorporate faults in the functionality
 	void prc_Original_pout(){
 		
 			
-		if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == NoFault){
+		if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 			out1 = in1;
 		}
 		else{	
-			std::cout << "fault on " << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
+			std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " in1 = "  << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") <<  " --- Time: " << sc_time_stamp() << std::endl;
 			
-			if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA0)
+			if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA0)
 				out1 = SC_LOGIC_0;
 			
-			else if (accessRegistry->getObjectFaultType(hardwareObjectId,"in1") == SA1)
+			else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"in1") == SA1)
 				out1 = SC_LOGIC_1;
 			else
 				out1 = SC_LOGIC_X;
@@ -737,7 +801,7 @@ public:
 //    D Flip Flop 
 /////////////////////////////////////////////////////////////////////////////////////
 
-class dff : public SC_MODULE_FAULTABLE {
+class dff_flt : public SC_MODULE_FAULTABLE {
 protected:
 
 	faultRegistry* accessRegistry;
@@ -750,17 +814,22 @@ public:
 
 	faultProperty faults[2];
 
-	SC_HAS_PROCESS(dff);
-	dff(sc_module_name _name, faultRegistry* accessRegistryIn){
+	SC_HAS_PROCESS(dff_flt);
+	dff_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-		accessRegistry->registerModule(this);
-        hardwareObjectId = _name;
-		
+
+        vector<string> full_name = getModuleName(this);
+        testbenchId = full_name[0];
+        designId = full_name[1];
+        hardwareObjectId = full_name[2];
+        
 		// Define faults
-		faults[0].setFaultProperty(hardwareObjectId,"D",1,SA0); //objId:1 for D
-		faults[1].setFaultProperty(hardwareObjectId,"D",2,SA1);
+		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"D",1,SA0); //objId:1 for D
+		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"D",2,SA1);
 		
+		accessRegistry->registerModule(this);
+
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
@@ -769,6 +838,7 @@ public:
             sensitive << val;
         SC_METHOD(faultable_set);
             sensitive << C;
+			dont_initialize();
         SC_METHOD(reset);
             sensitive << CLR << global_reset;
         SC_METHOD(preset);
@@ -790,15 +860,15 @@ public:
             if (NbarT->read() == SC_LOGIC_1) 
 				val.write(Si->read());
             else if (CE->read() == SC_LOGIC_1){
-				if (accessRegistry->getObjectFaultType(hardwareObjectId,"D") == NoFault){
+				if (!(accessRegistry->is_module_faulty(testbenchId, designId, hardwareObjectId))){
 					val.write(D->read());
 				}
 				else{
-					std::cout << "fault on " << hardwareObjectId << " D = " << accessRegistry->getObjectFaultType(hardwareObjectId,"D") << " --- Time: " << sc_time_stamp() << std::endl;
+					std::cout << "fault on " << testbenchId << "." << designId << "." << hardwareObjectId << " D = " << accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"D") << " --- Time: " << sc_time_stamp() << std::endl;
 
-					if (accessRegistry->getObjectFaultType(hardwareObjectId,"D") == SA0)
+					if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"D") == SA0)
 						val.write(SC_LOGIC_0);
-					else if (accessRegistry->getObjectFaultType(hardwareObjectId,"D") == SA1)
+					else if (accessRegistry->getObjectFaultType(testbenchId, designId, hardwareObjectId,"D") == SA1)
 						val.write(SC_LOGIC_1);
 				} 
 			// END ELSE IF
@@ -818,9 +888,9 @@ public:
 };
 
 /////////////////////////////////////////////////////////////////////////////////////
-//    D Flip Flop: DFF_NP0
+//    D Flip Flop: DFF_NP0_flt
 /////////////////////////////////////////////////////////////////////////////////////
-class DFF_NP0 : public SC_MODULE_FAULTABLE {
+class DFF_NP0_flt : public SC_MODULE_FAULTABLE {
 public:
     sc_in<sc_logic> D, C, R;
     sc_out<sc_logic> Q;
@@ -831,8 +901,8 @@ public:
     // sc_time tphl; 
     // sc_time tplh;
 
-    SC_HAS_PROCESS(DFF_NP0);
-	DFF_NP0(sc_module_name _name, faultRegistry* accessRegistryIn){
+    SC_HAS_PROCESS(DFF_NP0_flt);
+	DFF_NP0_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 
         SC_THREAD(eval);
             sensitive << val;
@@ -861,9 +931,9 @@ public:
 };
 
 /////////////////////////////////////////////////////////////////////////////////////
-//    D Flip Flop: DFF_NP1
+//    D Flip Flop: DFF_NP1_flt
 /////////////////////////////////////////////////////////////////////////////////////
-class DFF_NP1 : public SC_MODULE_FAULTABLE {
+class DFF_NP1_flt : public SC_MODULE_FAULTABLE {
 public:
     sc_in<sc_logic> D, C, R;
     sc_out<sc_logic> Q;
@@ -874,8 +944,8 @@ public:
     // sc_time tphl; 
     // sc_time tplh;
 
-    SC_HAS_PROCESS(DFF_NP1);
-	DFF_NP1(sc_module_name _name, faultRegistry* accessRegistryIn){
+    SC_HAS_PROCESS(DFF_NP1_flt);
+	DFF_NP1_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
     // DFlipFlop(sc_module_name _name, sc_time tphl, sc_time tplh) 
     // : sc_module(_name), tphl(tphl), tplh(tplh) {
 
