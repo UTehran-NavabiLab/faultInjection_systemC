@@ -28,8 +28,8 @@ public:
 	bufg_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-        vector<string> full_name = getModuleName(this);
-
+        
+		vector<string> full_name = getModuleName(this);
         testbenchId = full_name[0];
         designId = full_name[1];
         hardwareObjectId = full_name[2];
@@ -38,10 +38,11 @@ public:
 		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
 		
+		accessRegistry->registerModule(this);
+		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
-		accessRegistry->registerModule(this);
 
 		SC_METHOD(prc_Original_bufg);
 		sensitive << in1 << faultInjected;
@@ -96,8 +97,8 @@ public:
 		// - why should I set fault for myself, i'm not to decide somebody else should make that decision
 		// - all I care (and use) is getObjectFaultType
 		accessRegistry = accessRegistryIn;
-        vector<string> full_name = getModuleName(this);
-
+        
+		vector<string> full_name = getModuleName(this);
         testbenchId = full_name[0];
         designId = full_name[1];
         hardwareObjectId = full_name[2];
@@ -106,10 +107,11 @@ public:
 		faults[0].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",1,SA0); //objId:1 for in1
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1",2,SA1);
 		
+		accessRegistry->registerModule(this);
+		
 		// Register faults
 		accessRegistry->registerFault(&faults[0]); 
 		accessRegistry->registerFault(&faults[1]);
-		accessRegistry->registerModule(this);
 
 		SC_METHOD(prc_Original_notg);
 		sensitive << in1 << faultInjected;
@@ -160,8 +162,8 @@ public:
 	and_n_flt(sc_module_name _name, faultRegistry* accessRegistryIn){
 		// Register itself and gets its unique ID
 		accessRegistry = accessRegistryIn;
-        vector<string> full_name = getModuleName(this);
-
+        
+		vector<string> full_name = getModuleName(this);
         testbenchId = full_name[0];
         designId = full_name[1];
         hardwareObjectId = full_name[2];
@@ -173,6 +175,7 @@ public:
 		faults[1].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(0)",2,SA1);
 		faults[2].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",3,SA0); //objId:2 for in1[1]
 		faults[3].setFaultProperty(testbenchId, designId, hardwareObjectId,"in1(1)",4,SA1);
+		
 		accessRegistry->registerModule(this);
 		
 		// Register faults

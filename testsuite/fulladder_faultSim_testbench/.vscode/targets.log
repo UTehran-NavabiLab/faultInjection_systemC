@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Mon Jul  4 19:43:46 2022
+# Make data base, printed on Thu Jul  7 16:39:16 2022
 
 # Variables
 
@@ -24,7 +25,7 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/fulladder
+CURDIR := /Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/fulladder_faultSim_testbench
 # makefile
 SHELL = /bin/sh
 # environment
@@ -40,7 +41,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/7t/mf3pks410ss5m1tzmyl7yyvw0000gn/T/vscode-ipc-c1055868-3bdb-4f0d-a2a4-b758b4fe3892.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/7t/mf3pks410ss5m1tzmyl7yyvw0000gn/T/vscode-ipc-df741841-92b6-4144-bac9-ee60a2d0584d.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -64,7 +65,7 @@ SYSTEMC_LIBDIR = /usr/local/systemc-2.3.3/lib
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/fulladder
+PWD = /Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/fulladder_faultSim_testbench
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -150,7 +151,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 7129
+VSCODE_PID = 29426
 # environment
 UVM_LIBDIR = /usr/local/uvm-systemc-1.0-beta4/lib
 # variable set hash-table stats:
@@ -162,9 +163,9 @@ UVM_LIBDIR = /usr/local/uvm-systemc-1.0-beta4/lib
 
 # Directories
 
-# . (device 16777220, inode 24259197): 10 files, no impossibilities.
+# . (device 16777220, inode 24259197): 20 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -188,6 +189,18 @@ all: clean build run
 #  File has not been updated.
 
 # Not a target:
+utilities.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+fulladder_gold.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 js2sc.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -195,6 +208,12 @@ js2sc.h:
 
 # Not a target:
 .SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+component_lib.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -265,13 +284,14 @@ clean:
 # automatic
 # ? := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/10=10%
 #  commands to execute (from `Makefile', line 13):
 	rm -rf sc_main
 	rm -rf *.vcd
 	
 
-sc_main: sc_main.cpp FIM.h component_flt_lib.h js2sc.h testbench.h sc_main.cpp
+sc_main: sc_main.cpp FIM.h component_flt_lib.h component_lib.h fulladder_gold.h js2sc.h testbench.h utilities.h sc_main.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -292,7 +312,7 @@ testbench.h:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/46=0%
+# Load=17/1024=2%, Rehash=0, Collisions=0/52=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -304,6 +324,6 @@ testbench.h:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul  4 19:43:46 2022
+# Finished Make data base on Thu Jul  7 16:39:16 2022
 
  

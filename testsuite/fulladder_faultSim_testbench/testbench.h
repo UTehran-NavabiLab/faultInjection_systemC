@@ -26,11 +26,9 @@ SC_MODULE(testbench){
         accessRegistry = accessRegistryIn;
 
 
-        std::cout << "testbench:construction begins" << std::endl;
         SC_THREAD(faultInjection);
         SC_THREAD(clocking);
 
-        std::cout << "testbench: counter declaration begins" << std::endl;
         
         gdut = new fulladder("fulladder_gold", accessRegistry);
             gdut->i0(i0);
@@ -45,7 +43,6 @@ SC_MODULE(testbench){
             fdut->s(s_fdut);
             fdut->co(co_fdut);
         
-        std::cout << "testbench: end of construction" << std::endl;
 
     }
 
@@ -94,15 +91,13 @@ SC_MODULE(testbench){
 
         reportFile.open("reportFile.txt");
         
-        accessRegistry->infFaults();
+        std::cout << "* Initially Disable all faults " << std::endl;
         accessRegistry->removeFaultList(flist, 0);
-        wait(SC_ZERO_TIME);
-        std::cout << "initial fault to Nofault:---------------------" << std::endl;
         accessRegistry->infFaults();
 
-        //--- Outer loop to inject file ----------------------
+        //--- Outer loop to inject fault ----------------------
         for(int i=1; i <= flist.size(); i++){
-            std::cout << "inject fault:--------------------- NUMBER:" << i << std::endl;
+            std::cout << "--------- Inject Fault:--------------------- NUMBER:" << i << std::endl;
             accessRegistry->injectFaultList(flist, i);
             numOfFaults++;
 
@@ -110,29 +105,37 @@ SC_MODULE(testbench){
             reportFile << "TB---->faultNum = " << numOfFaults << " is injected @ " << sc_core::sc_time_stamp();
             detected = false;
             for(int j=0; ((j < testVectors.size()) && (!detected)); j++){
-                std::cout << "input test:--------------------- " << std::endl;
                 testData = str2logic<3>(testVectors[j]);
-                std::cout << "testData: " << testData << std::endl;
+                std::cout << "\n" << "---+++---+++---+++---+++" << std::endl;
+                std::cout << "Apply Test Vector: " << testData << std::endl << std::endl;
                 ci.write(testData[0]);
                 i1.write(testData[1]);
                 i0.write(testData[2]);
 
                 wait(2, SC_NS);
-                std::cout << "co_fdut: " << co_fdut.read() << ", co_gdut: " << co_gdut.read() << ", s_fdut: " << s_fdut.read() << ", s_gdut: " << s_gdut.read() << std::endl;
+                std::cout << "++ Simulation result for faulty vs gold model: " << std::endl;
+                std::cout << "co_gold vs co_faulty: " << std::endl;
+                std::cout << co_gdut.read() << "  vs  " << co_fdut.read() << std::endl;
+                std::cout << "s_gold vs s_faulty: " << std::endl;
+                std::cout << s_gdut.read() << "  vs  " << s_fdut.read() << std::endl;
+                std::cout << std::endl;
 
                 //--- if outputs are not matched 
                 if(!((co_fdut.read() == co_gdut.read()) && (s_fdut.read() == s_gdut.read()))){
                     detected = true;
-                    std::cout << "detected" << std::endl;
+                    std::cout << "******* Fault has been detected ********" << std::endl;
+                    std::cout << std::endl;
                     //--- write report ----------------------
-                    reportFile << ", detected by testVector = " << testData << " @ " << sc_core::sc_time_stamp() << std::endl;
+                    reportFile << ", detected by testVector = " << testData << " @ " << sc_core::sc_time_stamp();
                 } //--- endif: test detected the fault
+                reportFile << std::endl;
             }//--- endfor: testvectors
             if(detected)
                 numOfDetecteds++;
             
             accessRegistry->removeFaultList(flist, i); 
-            std::cout << "remove fault:--------------------- " << std::endl;
+            std::cout << "--------- Remove Fault:--------------------- NUMBER:" << i << std::endl << std::endl;
+
         }//--- endfor: faultlist
 
 
@@ -147,7 +150,6 @@ SC_MODULE(testbench){
         //--- close report file ----------------------
         reportFile.close();
 
-        // wait(SC_ZERO_TIME);
-        std::cout << "end of faultInjection::---------------------------  " << std::endl;
+        std::cout << "+ End of faultInjection::---------------------------  " << std::endl;
     }
 };
