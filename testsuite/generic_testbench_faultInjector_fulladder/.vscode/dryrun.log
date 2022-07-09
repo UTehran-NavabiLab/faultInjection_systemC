@@ -1,8 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/fulladder_faultSim_testbench'
-rm -rf sc_main
-rm -rf *.vcd
-/usr/local/bin/g++-11 -L /usr/local/systemc-2.3.3/lib -I /usr/local/systemc-2.3.3/include/ -l systemc FIM.cpp sc_main.cpp -o sc_main
-./sc_main
-make: Leaving directory `/Users/ebinouri/Documents/UNi/systemC/Fault-injection/faultInjection_package/testsuite/fulladder_faultSim_testbench'
- 
