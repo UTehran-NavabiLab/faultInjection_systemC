@@ -1,0 +1,2671 @@
+++ Registered Module: fulladder_tb.fulladder_gold.nor_n_0
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_1
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_2
+++ Registered Module: fulladder_tb.fulladder_gold.notg_3
+++ Registered Module: fulladder_tb.fulladder_gold.nor_n_4
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_5
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_6
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_7
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_8
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_9
+++ Registered Module: fulladder_tb.fulladder_gold.nand_n_10
+++ Registered Module: fulladder_tb.fulladder_gold.notg_11
+++ Registered Module: fulladder_tb.fulladder_gold.notg_12
+++ Registered Module: fulladder_tb.fulladder_gold.notg_13
+++ Registered Module: fulladder_tb.fulladder_gold.pin_14
+++ Registered Module: fulladder_tb.fulladder_gold.pout_15
+++ Registered Module: fulladder_tb.fulladder_gold.pin_16
+++ Registered Module: fulladder_tb.fulladder_gold.pin_17
+++ Registered Module: fulladder_tb.fulladder_gold.pout_18
+++ Registered Module: fulladder_tb.FA_NET.nor_n_0
+++ Registered Module: fulladder_tb.FA_NET.nand_n_1
+++ Registered Module: fulladder_tb.FA_NET.nand_n_2
+++ Registered Module: fulladder_tb.FA_NET.notg_3
+++ Registered Module: fulladder_tb.FA_NET.nor_n_4
+++ Registered Module: fulladder_tb.FA_NET.nand_n_5
+++ Registered Module: fulladder_tb.FA_NET.nand_n_6
+++ Registered Module: fulladder_tb.FA_NET.nand_n_7
+++ Registered Module: fulladder_tb.FA_NET.nand_n_8
+++ Registered Module: fulladder_tb.FA_NET.nand_n_9
+++ Registered Module: fulladder_tb.FA_NET.nand_n_10
+++ Registered Module: fulladder_tb.FA_NET.notg_11
+++ Registered Module: fulladder_tb.FA_NET.notg_12
+++ Registered Module: fulladder_tb.FA_NET.notg_13
+++ Registered Module: fulladder_tb.FA_NET.pin_14
+++ Registered Module: fulladder_tb.FA_NET.pout_15
+++ Registered Module: fulladder_tb.FA_NET.pin_16
+++ Registered Module: fulladder_tb.FA_NET.pin_17
+++ Registered Module: fulladder_tb.FA_NET.pout_18
+* Initially Disable all faults 
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_0
+obj	  | in1(0)
+faultType | 0
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_0
+obj	  | in1(1)
+faultType | 0
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_1
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_1
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_2
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_2
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_4
+obj	  | in1(0)
+faultType | 0
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_4
+obj	  | in1(1)
+faultType | 0
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_5
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_5
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_6
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_6
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_7
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_7
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_8
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_8
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_9
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_9
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_10
+obj	  | in1(0)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_10
+obj	  | in1(1)
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_15
+obj	  | in1
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_15
+obj	  | in1
+faultType | 0
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_18
+obj	  | in1
+faultType | 1
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_18
+obj	  | in1
+faultType | 0
+
+Registered fualt objects
+Total number of faultable objects: 116
++++----+++----+++----+++----+++
+Faulty object ==== Nubmer: 0
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_0
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 1
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_0
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 2
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_0
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 3
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_0
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 4
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_1
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 5
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_1
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 6
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_1
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 7
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_1
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 8
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_2
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 9
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_2
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 10
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_2
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 11
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_2
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 12
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_3
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 13
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_3
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 14
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_4
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 15
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_4
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 16
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_4
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 17
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nor_n_4
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 18
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_5
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 19
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_5
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 20
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_5
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 21
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_5
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 22
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_6
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 23
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_6
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 24
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_6
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 25
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_6
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 26
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_7
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 27
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_7
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 28
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_7
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 29
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_7
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 30
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_8
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 31
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_8
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 32
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_8
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 33
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_8
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 34
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_9
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 35
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_9
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 36
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_9
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 37
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_9
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 38
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_10
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 39
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_10
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 40
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_10
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 41
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | nand_n_10
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 42
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_11
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 43
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_11
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 44
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_12
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 45
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_12
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 46
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_13
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 47
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | notg_13
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 48
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pin_14
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 49
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pin_14
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 50
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pout_15
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 51
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pout_15
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 52
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pin_16
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 53
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pin_16
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 54
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pin_17
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 55
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pin_17
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 56
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pout_18
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 57
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | fulladder_gold
+moduleId       | pout_18
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 58
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_0
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 59
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_0
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 60
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_0
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 61
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_0
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 62
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_1
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 63
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_1
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 64
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_1
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 65
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_1
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 66
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_2
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 67
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_2
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 68
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_2
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 69
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_2
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 70
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_3
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 71
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_3
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 72
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_4
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 73
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_4
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 74
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_4
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 75
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nor_n_4
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 76
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_5
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 77
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_5
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 78
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_5
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 79
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_5
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 80
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_6
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 81
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_6
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 82
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_6
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 83
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_6
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 84
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_7
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 85
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_7
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 86
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_7
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 87
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_7
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 88
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_8
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 89
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_8
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 90
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_8
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 91
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_8
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 92
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_9
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 93
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_9
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 94
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_9
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 95
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_9
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 96
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_10
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 97
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_10
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 98
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_10
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 99
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | nand_n_10
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 100
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_11
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 101
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_11
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 102
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_12
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 103
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_12
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 104
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_13
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 105
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | notg_13
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 106
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pin_14
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 107
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pin_14
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 108
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pout_15
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 109
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pout_15
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 110
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pin_16
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 111
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pin_16
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 112
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pin_17
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 113
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pin_17
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object ==== Nubmer: 114
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pout_18
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object ==== Nubmer: 115
+-------------------------------
+getTestbenchId | fulladder_tb
+getDesignId    | FA_NET
+moduleId       | pout_18
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+-----------------------------
+--------- Inject Fault:--------------------- NUMBER:1
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_0
+obj	  | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nor_n_0
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 0 s
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 0 s
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_0
+obj	  | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:1
+
+--------- Inject Fault:--------------------- NUMBER:2
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_0
+obj	  | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nor_n_0
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 8 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_0
+obj	  | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:2
+
+--------- Inject Fault:--------------------- NUMBER:3
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_1
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_1
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 10 ns
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 10 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 12 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 14 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 16 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 18 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 20 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_1
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:3
+
+--------- Inject Fault:--------------------- NUMBER:4
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_1
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_1
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 22 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 24 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 26 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 28 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 30 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 32 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 110
+
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 34 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_1
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:4
+
+--------- Inject Fault:--------------------- NUMBER:5
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_2
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_2
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 36 ns
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 36 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 38 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 40 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_2
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:5
+
+--------- Inject Fault:--------------------- NUMBER:6
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_2
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_2
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 42 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 44 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_2
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:6
+
+--------- Inject Fault:--------------------- NUMBER:7
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_4
+obj	  | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nor_n_4
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 46 ns
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 46 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 48 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 52 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_4
+obj	  | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:7
+
+--------- Inject Fault:--------------------- NUMBER:8
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_4
+obj	  | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nor_n_4
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 54 ns
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 54 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nor_n_4
+obj	  | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:8
+
+--------- Inject Fault:--------------------- NUMBER:9
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_5
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_5
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 56 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 58 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 62 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 64 ns
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 64 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 66 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 110
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 111
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 70 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_5
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:9
+
+--------- Inject Fault:--------------------- NUMBER:10
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_5
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_5
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 72 ns
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 72 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 74 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 78 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 80 ns
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 80 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_5
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:10
+
+--------- Inject Fault:--------------------- NUMBER:11
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_6
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_6
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 82 ns
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 82 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 84 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 88 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 90 ns
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 90 ns
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 90 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 92 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_6
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:11
+
+--------- Inject Fault:--------------------- NUMBER:12
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_6
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_6
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 94 ns
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 94 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_6
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:12
+
+--------- Inject Fault:--------------------- NUMBER:13
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_7
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_7
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 96 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_7
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:13
+
+--------- Inject Fault:--------------------- NUMBER:14
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_7
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_7
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_7
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:14
+
+--------- Inject Fault:--------------------- NUMBER:15
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_8
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_8
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 100 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 100 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 102 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_8
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:15
+
+--------- Inject Fault:--------------------- NUMBER:16
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_8
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_8
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 104 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 106 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 110 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 112 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 112 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 112 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_8
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:16
+
+--------- Inject Fault:--------------------- NUMBER:17
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_9
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_9
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 114 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 114 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 116 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 122 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 122 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_9
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:17
+
+--------- Inject Fault:--------------------- NUMBER:18
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_9
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_9
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 124 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 126 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_9
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:18
+
+--------- Inject Fault:--------------------- NUMBER:19
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_10
+obj	  | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_10
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 128 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 128 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 134 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 136 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 136 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 138 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_10
+obj	  | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:19
+
+--------- Inject Fault:--------------------- NUMBER:20
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_10
+obj	  | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.nand_n_10
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 140 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 146 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | nand_n_10
+obj	  | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:20
+
+--------- Inject Fault:--------------------- NUMBER:21
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_15
+obj	  | in1
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.pout_15
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 148 ns
+fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 148 ns
+fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 148 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_15
+obj	  | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:21
+
+--------- Inject Fault:--------------------- NUMBER:22
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_15
+obj	  | in1
+faultType | 0
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.pout_15
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_15
+obj	  | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:22
+
+--------- Inject Fault:--------------------- NUMBER:23
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_18
+obj	  | in1
+faultType | 1
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.pout_18
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+fault on fulladder_tb.FA_NET.pout_18 in1 = 1 --- Time: 152 ns
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_18
+obj	  | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:23
+
+--------- Inject Fault:--------------------- NUMBER:24
+Fault to be Injected: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_18
+obj	  | in1
+faultType | 0
+## enable faultInjected signal on module:: fulladder_tb.FA_NET.pout_18
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+Fault to be removed: 
+----------|-------------- 
+testbench | fulladder_tb
+dut	  | FA_NET
+module	  | pout_18
+obj	  | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:24
+
++ End of faultInjection::---------------------------  
