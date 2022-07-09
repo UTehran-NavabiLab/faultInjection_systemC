@@ -1,0 +1,902 @@
+* Initially Disable all faults 
+--------- Inject Fault:--------------------- NUMBER:1
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:1
+
+--------- Inject Fault:--------------------- NUMBER:2
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:2
+
+--------- Inject Fault:--------------------- NUMBER:3
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:3
+
+--------- Inject Fault:--------------------- NUMBER:4
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 110
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:4
+
+--------- Inject Fault:--------------------- NUMBER:5
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:5
+
+--------- Inject Fault:--------------------- NUMBER:6
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:6
+
+--------- Inject Fault:--------------------- NUMBER:7
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:7
+
+--------- Inject Fault:--------------------- NUMBER:8
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:8
+
+--------- Inject Fault:--------------------- NUMBER:9
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 110
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 111
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:9
+
+--------- Inject Fault:--------------------- NUMBER:10
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:10
+
+--------- Inject Fault:--------------------- NUMBER:11
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:11
+
+--------- Inject Fault:--------------------- NUMBER:12
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:12
+
+--------- Inject Fault:--------------------- NUMBER:13
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:13
+
+--------- Inject Fault:--------------------- NUMBER:14
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:14
+
+--------- Inject Fault:--------------------- NUMBER:15
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:15
+
+--------- Inject Fault:--------------------- NUMBER:16
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:16
+
+--------- Inject Fault:--------------------- NUMBER:17
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:17
+
+--------- Inject Fault:--------------------- NUMBER:18
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+1  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:18
+
+--------- Inject Fault:--------------------- NUMBER:19
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:19
+
+--------- Inject Fault:--------------------- NUMBER:20
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+1  vs  1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+1  vs  0
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:20
+
+--------- Inject Fault:--------------------- NUMBER:21
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:21
+
+--------- Inject Fault:--------------------- NUMBER:22
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  1
+s_gold vs s_faulty: 
+0  vs  0
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:22
+
+--------- Inject Fault:--------------------- NUMBER:23
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:23
+
+--------- Inject Fault:--------------------- NUMBER:24
+
+---+++---+++---+++---+++
+Apply Test Vector: 000
+
+++ Simulation result for faulty vs gold model: 
+co_gold vs co_faulty: 
+0  vs  0
+s_gold vs s_faulty: 
+0  vs  1
+
+******* Fault has been detected ********
+
+--------- Remove Fault:--------------------- NUMBER:24
+
++ End of faultInjection::---------------------------  
