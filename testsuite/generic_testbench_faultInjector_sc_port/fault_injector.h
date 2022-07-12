@@ -115,6 +115,7 @@ SC_MODULE(fault_injector){
                 numOfDetecteds++;
             
             accessRegistry->removeFaultList(flist, i); 
+            wait(SC_ZERO_TIME);
             accessRegistry->log_file << "--------- Remove Fault:--------------------- NUMBER:" << i << std::endl << std::endl;
 
         }//--- endfor: faultlist

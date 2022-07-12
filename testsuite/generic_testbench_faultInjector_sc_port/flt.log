@@ -1355,8 +1355,8 @@ fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 0 --- fault on in1[1] = 3 --- Time
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    0
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -1383,6 +1383,7 @@ faultType | 0
 Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4 ns
+fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -1399,8 +1400,8 @@ fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1411,8 +1412,8 @@ fault on fulladder_tb.FA_NET.nor_n_0 in1[0] = 3 --- fault on in1[1] = 0 --- Time
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    0
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -1456,8 +1457,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1468,8 +1469,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1480,8 +1481,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -1492,8 +1493,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1504,8 +1505,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    0
     0   |    1
+    1   |    0
 
 ******* Fault has been detected ********
 
@@ -1532,6 +1533,7 @@ faultType | 1
 Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 22 ns
+fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 22 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -1548,8 +1550,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1560,8 +1562,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1572,8 +1574,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -1584,8 +1586,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1596,8 +1598,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -1608,8 +1610,8 @@ fault on fulladder_tb.FA_NET.nand_n_1 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    0
     0   |    1
+    1   |    0
 
 ******* Fault has been detected ********
 
@@ -1653,8 +1655,8 @@ fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1665,8 +1667,8 @@ fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    1
     1   |    0
+    0   |    1
 
 ******* Fault has been detected ********
 
@@ -1693,6 +1695,7 @@ faultType | 1
 Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 42 ns
+fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 42 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -1709,8 +1712,8 @@ fault on fulladder_tb.FA_NET.nand_n_2 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    1
     1   |    0
+    0   |    1
 
 ******* Fault has been detected ********
 
@@ -1738,6 +1741,7 @@ Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 46 ns
 fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 46 ns
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 46 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -1754,8 +1758,8 @@ fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1765,8 +1769,8 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1777,8 +1781,8 @@ fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 0 --- fault on in1[1] = 3 --- Time
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    1
+    1   |    1
 
 ******* Fault has been detected ********
 
@@ -1806,12 +1810,13 @@ Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 54 ns
 fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 54 ns
+fault on fulladder_tb.FA_NET.nor_n_4 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 54 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     0   |    1
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -1854,8 +1859,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1865,8 +1870,8 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1877,8 +1882,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -1890,8 +1895,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1902,8 +1907,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -1913,8 +1918,8 @@ Apply Test Vector: 110
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -1925,8 +1930,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     1   |    0
+    1   |    1
 
 ******* Fault has been detected ********
 
@@ -1954,6 +1959,7 @@ Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 72 ns
 fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 72 ns
+fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 72 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -1970,8 +1976,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1981,8 +1987,8 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -1993,8 +1999,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -2006,8 +2012,8 @@ fault on fulladder_tb.FA_NET.nand_n_5 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    0
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -2051,8 +2057,8 @@ fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2062,8 +2068,8 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2074,8 +2080,8 @@ fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
@@ -2088,8 +2094,8 @@ fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2100,8 +2106,8 @@ fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    1
+    1   |    1
 
 ******* Fault has been detected ********
 
@@ -2129,12 +2135,13 @@ Apply Test Vector: 000
 
 fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 94 ns
 fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 94 ns
+fault on fulladder_tb.FA_NET.nand_n_6 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 94 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     0   |    1
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -2165,8 +2172,8 @@ fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     0   |    1
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -2192,12 +2199,72 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
+fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 98 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
     0   |    0
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 100 ns
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    1   |    1
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    1   |    1
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 104 ns
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    0   |    0
+    1   |    1
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 100
+
+fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 106 ns
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    1   |    1
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 101
+
+fault on fulladder_tb.FA_NET.nand_n_7 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 108 ns
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
     0   |    1
+    1   |    1
 
 ******* Fault has been detected ********
 
@@ -2223,8 +2290,9 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 100 ns
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 100 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 110 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 110 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 110 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -2236,13 +2304,13 @@ fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
 ---+++---+++---+++---+++
 Apply Test Vector: 001
 
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 102 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 112 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    0
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -2268,7 +2336,8 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 104 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 114 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 114 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -2280,13 +2349,13 @@ fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
 ---+++---+++---+++---+++
 Apply Test Vector: 001
 
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 106 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 116 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2296,34 +2365,34 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 011
 
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 110 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 120 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 100
 
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 112 ns
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 112 ns
-fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 112 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 122 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 122 ns
+fault on fulladder_tb.FA_NET.nand_n_8 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 122 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    0
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -2349,8 +2418,8 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 114 ns
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 114 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 124 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 124 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -2362,13 +2431,13 @@ fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Tim
 ---+++---+++---+++---+++
 Apply Test Vector: 001
 
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 116 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 126 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2378,8 +2447,8 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2389,21 +2458,21 @@ Apply Test Vector: 011
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 100
 
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 122 ns
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 122 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 132 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 132 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    1
     1   |    1
+    0   |    1
 
 ******* Fault has been detected ********
 
@@ -2429,7 +2498,8 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 124 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 134 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 134 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -2441,13 +2511,13 @@ fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Tim
 ---+++---+++---+++---+++
 Apply Test Vector: 001
 
-fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 126 ns
+fault on fulladder_tb.FA_NET.nand_n_9 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 136 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    1
     1   |    1
+    0   |    1
 
 ******* Fault has been detected ********
 
@@ -2473,8 +2543,7 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 128 ns
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 128 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 138 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -2490,8 +2559,8 @@ Apply Test Vector: 001
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2501,45 +2570,45 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 011
 
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 134 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 144 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    1   |    1
     0   |    0
+    1   |    1
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 100
 
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 136 ns
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 136 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 146 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 146 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 101
 
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 138 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 148 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    1   |    0
     0   |    0
+    1   |    0
 
 ******* Fault has been detected ********
 
@@ -2565,7 +2634,8 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 140 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 150 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 150 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
@@ -2581,8 +2651,8 @@ Apply Test Vector: 001
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
@@ -2592,20 +2662,20 @@ Apply Test Vector: 010
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     1   |    1
+    0   |    0
 
 
 ---+++---+++---+++---+++
 Apply Test Vector: 011
 
-fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 146 ns
+fault on fulladder_tb.FA_NET.nand_n_10 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 156 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    1   |    0
     0   |    0
+    1   |    0
 
 ******* Fault has been detected ********
 
@@ -2631,15 +2701,14 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 148 ns
-fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 148 ns
-fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 148 ns
+fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 158 ns
+fault on fulladder_tb.FA_NET.pout_15 in1 = 1 --- Time: 158 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    1
     0   |    0
+    0   |    1
 
 ******* Fault has been detected ********
 
@@ -2665,12 +2734,47 @@ faultType | 0
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
+fault on fulladder_tb.FA_NET.pout_15 in1 = 0 --- Time: 160 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    1
     0   |    0
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    1   |    1
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 010
+
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    1   |    1
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 011
+
+fault on fulladder_tb.FA_NET.pout_15 in1 = 0 --- Time: 166 ns
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    0   |    0
+    1   |    0
 
 ******* Fault has been detected ********
 
@@ -2696,13 +2800,13 @@ faultType | 1
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
-fault on fulladder_tb.FA_NET.pout_18 in1 = 1 --- Time: 152 ns
+fault on fulladder_tb.FA_NET.pout_18 in1 = 1 --- Time: 168 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
-    0   |    0
     0   |    1
+    0   |    0
 
 ******* Fault has been detected ********
 
@@ -2728,12 +2832,25 @@ faultType | 0
 ---+++---+++---+++---+++
 Apply Test Vector: 000
 
+fault on fulladder_tb.FA_NET.pout_18 in1 = 0 --- Time: 170 ns
 ++ Simulation result 
  gold vs faulty 
  -------------- 
         |       
     0   |    0
-    0   |    1
+    0   |    0
+
+
+---+++---+++---+++---+++
+Apply Test Vector: 001
+
+fault on fulladder_tb.FA_NET.pout_18 in1 = 0 --- Time: 172 ns
+++ Simulation result 
+ gold vs faulty 
+ -------------- 
+        |       
+    1   |    0
+    0   |    0
 
 ******* Fault has been detected ********
 

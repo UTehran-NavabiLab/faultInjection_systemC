@@ -1,0 +1,43 @@
+
+The goal is to verify fault-simulation result of systemC in comparison to vhdl output using modelsim (with help of TCL script):
+
+- one obvious difference is the way we inject faults on design:
+    using TCL in vhdl, faults are injected on signals, forcing any connected net to that signals to get fautly value
+        this ensures that more then one gate (whose pin is faulty) get effected hence there is chance that fault being detected with other test Vector
+
+    using fdl method, faults are inject on gates, meaning every fault has effect on one and only one gate no matter what other nets the specifying port 
+        is connected to
+
+- one particular observation was that after every fault removal there must be a waiting of at least (one delta cycle) in order
+    for injected_signal to be false
+
+
+verification of fulladder for two method: 
+    unequal points have been verified and all match above assumption
+
+ sysC | vhdl
+  ---------
+  001 | 001
+  010 | 010
+  101 | 101
+  110 | 110
+* 010 | 000
+* 001 | 000
+  011 | 011
+  000 | 000
+* 111 | 011
+  100 | 100
+  101 | 101
+  000 | 000
+  000 | 000
+  101 | 101
+  001 | 001
+  100 | 100
+  100 | 100
+* 001 | 000
+  101 | 101
+  011 | 011
+  000 | 000
+  011 | 011
+  000 | 000
+  001 | 001

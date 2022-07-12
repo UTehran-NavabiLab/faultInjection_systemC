@@ -11,17 +11,17 @@ TB---->faultNum = 10 is injected @ 72 ns, detected by testVector = 100 @ 82 ns
 TB---->faultNum = 11 is injected @ 82 ns, detected by testVector = 101 @ 94 ns
 TB---->faultNum = 12 is injected @ 94 ns, detected by testVector = 000 @ 96 ns
 TB---->faultNum = 13 is injected @ 96 ns, detected by testVector = 000 @ 98 ns
-TB---->faultNum = 14 is injected @ 98 ns, detected by testVector = 000 @ 100 ns
-TB---->faultNum = 15 is injected @ 100 ns, detected by testVector = 001 @ 104 ns
-TB---->faultNum = 16 is injected @ 104 ns, detected by testVector = 100 @ 114 ns
-TB---->faultNum = 17 is injected @ 114 ns, detected by testVector = 100 @ 124 ns
-TB---->faultNum = 18 is injected @ 124 ns, detected by testVector = 001 @ 128 ns
-TB---->faultNum = 19 is injected @ 128 ns, detected by testVector = 101 @ 140 ns
-TB---->faultNum = 20 is injected @ 140 ns, detected by testVector = 011 @ 148 ns
-TB---->faultNum = 21 is injected @ 148 ns, detected by testVector = 000 @ 150 ns
-TB---->faultNum = 22 is injected @ 150 ns, detected by testVector = 000 @ 152 ns
-TB---->faultNum = 23 is injected @ 152 ns, detected by testVector = 000 @ 154 ns
-TB---->faultNum = 24 is injected @ 154 ns, detected by testVector = 000 @ 156 ns
+TB---->faultNum = 14 is injected @ 98 ns, detected by testVector = 101 @ 110 ns
+TB---->faultNum = 15 is injected @ 110 ns, detected by testVector = 001 @ 114 ns
+TB---->faultNum = 16 is injected @ 114 ns, detected by testVector = 100 @ 124 ns
+TB---->faultNum = 17 is injected @ 124 ns, detected by testVector = 100 @ 134 ns
+TB---->faultNum = 18 is injected @ 134 ns, detected by testVector = 001 @ 138 ns
+TB---->faultNum = 19 is injected @ 138 ns, detected by testVector = 101 @ 150 ns
+TB---->faultNum = 20 is injected @ 150 ns, detected by testVector = 011 @ 158 ns
+TB---->faultNum = 21 is injected @ 158 ns, detected by testVector = 000 @ 160 ns
+TB---->faultNum = 22 is injected @ 160 ns, detected by testVector = 011 @ 168 ns
+TB---->faultNum = 23 is injected @ 168 ns, detected by testVector = 000 @ 170 ns
+TB---->faultNum = 24 is injected @ 170 ns, detected by testVector = 001 @ 174 ns
 numOfDetecteds: 24
 numOfFaults: 24
 coverage: 1
