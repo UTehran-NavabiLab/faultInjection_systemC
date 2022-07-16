@@ -1,0 +1,7225 @@
+++ Registered Module: counter_TB_vhd.FUT.notg_0
+++ Registered Module: counter_TB_vhd.FUT.notg_1
+++ Registered Module: counter_TB_vhd.FUT.notg_2
+++ Registered Module: counter_TB_vhd.FUT.nand_n_3
+++ Registered Module: counter_TB_vhd.FUT.nand_n_4
+++ Registered Module: counter_TB_vhd.FUT.nor_n_5
+++ Registered Module: counter_TB_vhd.FUT.nor_n_6
+++ Registered Module: counter_TB_vhd.FUT.nor_n_7
+++ Registered Module: counter_TB_vhd.FUT.nor_n_8
+++ Registered Module: counter_TB_vhd.FUT.nor_n_9
+++ Registered Module: counter_TB_vhd.FUT.nor_n_10
+++ Registered Module: counter_TB_vhd.FUT.nor_n_11
+++ Registered Module: counter_TB_vhd.FUT.nand_n_12
+++ Registered Module: counter_TB_vhd.FUT.notg_13
+++ Registered Module: counter_TB_vhd.FUT.nor_n_14
+++ Registered Module: counter_TB_vhd.FUT.nor_n_15
+++ Registered Module: counter_TB_vhd.FUT.nor_n_16
+++ Registered Module: counter_TB_vhd.FUT.nor_n_17
+++ Registered Module: counter_TB_vhd.FUT.nor_n_18
+++ Registered Module: counter_TB_vhd.FUT.dff_19
+++ Registered Module: counter_TB_vhd.FUT.dff_20
+++ Registered Module: counter_TB_vhd.FUT.dff_21
+++ Registered Module: counter_TB_vhd.FUT.dff_22
+++ Registered Module: counter_TB_vhd.FUT.pin_23
+++ Registered Module: counter_TB_vhd.FUT.pout_24
+++ Registered Module: counter_TB_vhd.FUT.pout_25
+++ Registered Module: counter_TB_vhd.FUT.pout_26
+++ Registered Module: counter_TB_vhd.FUT.pout_27
+++ Registered Module: counter_TB_vhd.FUT.pout_28
+++ Registered Module: counter_TB_vhd.FUT.pin_29
+++ Registered Module: counter_TB_vhd.FUT.pin_30
+++ Registered Module: counter_TB_vhd.FUT.pin_31
+++ Registered Module: counter_TB_vhd.FUT.pin_32
+++ Registered Module: counter_TB_vhd.FUT.pin_33
+++ Registered Module: counter_TB_vhd.FUT.pout_34
+* Initially Disable all faults 
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_3
+obj       | in1(0)
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_3
+obj       | in1(1)
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_4
+obj       | in1(0)
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_4
+obj       | in1(1)
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_5
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_5
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_6
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_6
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_7
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_7
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_8
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_8
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_9
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_9
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_10
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_10
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_11
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_11
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_12
+obj       | in1(0)
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_12
+obj       | in1(1)
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_14
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_14
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_15
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_15
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_16
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_16
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_17
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_17
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_18
+obj       | in1(0)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_18
+obj       | in1(1)
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_19
+obj       | D
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_19
+obj       | D
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_20
+obj       | D
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_20
+obj       | D
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_21
+obj       | D
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_21
+obj       | D
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_22
+obj       | D
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_22
+obj       | D
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_24
+obj       | in1
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_24
+obj       | in1
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_25
+obj       | in1
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_25
+obj       | in1
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_26
+obj       | in1
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_26
+obj       | in1
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_27
+obj       | in1
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_27
+obj       | in1
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_28
+obj       | in1
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_28
+obj       | in1
+faultType | 0
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_34
+obj       | in1
+faultType | 1
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_34
+obj       | in1
+faultType | 0
+
+Registered fault objects
+Total number of faultable objects: 100
++++----+++----+++----+++----+++
+Faulty object: #0
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_0
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #1
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_0
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #2
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_1
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #3
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_1
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #4
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_2
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #5
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_2
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #6
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_3
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #7
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_3
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #8
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_3
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #9
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_3
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #10
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_4
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #11
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_4
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #12
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_4
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #13
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_4
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #14
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_5
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #15
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_5
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #16
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_5
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #17
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_5
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #18
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_6
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #19
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_6
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #20
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_6
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #21
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_6
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #22
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_7
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #23
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_7
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #24
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_7
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #25
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_7
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #26
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_8
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #27
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_8
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #28
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_8
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #29
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_8
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #30
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_9
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #31
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_9
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #32
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_9
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #33
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_9
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #34
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_10
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #35
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_10
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #36
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_10
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #37
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_10
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #38
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_11
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #39
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_11
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #40
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_11
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #41
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_11
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #42
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_12
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #43
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_12
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #44
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_12
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #45
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nand_n_12
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #46
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_13
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #47
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | notg_13
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #48
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_14
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #49
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_14
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #50
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_14
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #51
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_14
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #52
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_15
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #53
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_15
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #54
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_15
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #55
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_15
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #56
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_16
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #57
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_16
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #58
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_16
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #59
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_16
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #60
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_17
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #61
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_17
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #62
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_17
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #63
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_17
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #64
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_18
+objId          | in1(0)
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #65
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_18
+objId          | in1(0)
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #66
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_18
+objId          | in1(1)
+faultId        | 3
+type           | 0
+enable         | 0
+
+Faulty object: #67
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | nor_n_18
+objId          | in1(1)
+faultId        | 4
+type           | 1
+enable         | 0
+
+Faulty object: #68
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_19
+objId          | D
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #69
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_19
+objId          | D
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #70
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_20
+objId          | D
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #71
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_20
+objId          | D
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #72
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_21
+objId          | D
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #73
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_21
+objId          | D
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #74
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_22
+objId          | D
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #75
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | dff_22
+objId          | D
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #76
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_23
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #77
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_23
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #78
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_24
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #79
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_24
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #80
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_25
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #81
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_25
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #82
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_26
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #83
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_26
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #84
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_27
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #85
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_27
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #86
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_28
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #87
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_28
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #88
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_29
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #89
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_29
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #90
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_30
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #91
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_30
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #92
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_31
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #93
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_31
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #94
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_32
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #95
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_32
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #96
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_33
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #97
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pin_33
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+Faulty object: #98
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_34
+objId          | in1
+faultId        | 1
+type           | 0
+enable         | 0
+
+Faulty object: #99
+-------------------------------
+getTestbenchId | counter_TB_vhd
+getDesignId    | FUT
+moduleId       | pout_34
+objId          | in1
+faultId        | 2
+type           | 1
+enable         | 0
+
+-----------------------------
+--------- Inject Fault:--------------------- NUMBER:1
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_3
+obj       | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nand_n_3
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 0 s
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 0 s
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 30 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 50 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 70 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 90 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 110 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 130 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 150 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 170 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 190 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 230 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 290 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 330 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 350 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 370 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 410 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 450 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 470 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 550 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 570 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 590 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110110 = 0111 , 10110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00001111111111
+
+
+load_st(PPI) = 1111
+
+PI = 1
+
+expected_PO(PO) = 11111
+
+cur_expected_st(PPO) = 0000
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101111111 = 1011 , 11111
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111111 = 1011 , 11111
+
+---+++---+++---+++---+++
+Apply Test Vector: 01000011010011
+
+
+load_st(PPI) = 0011
+
+PI = 1
+
+expected_PO(PO) = 00110
+
+cur_expected_st(PPO) = 0100
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 710 ns
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 770 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 790 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000000110 = 0000 , 00110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000000110 = 0000 , 00110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00100001010001
+
+
+load_st(PPI) = 0001
+
+PI = 1
+
+expected_PO(PO) = 00010
+
+cur_expected_st(PPO) = 0010
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 810 ns
+
+Si = 0
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 890 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010000010 = 0100 , 00010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010000010 = 0100 , 00010
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 910 ns
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_3
+obj       | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:1
+
+--------- Inject Fault:--------------------- NUMBER:2
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_3
+obj       | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nand_n_3
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 990 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 990 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 990 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1030 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1050 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1070 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1090 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1110 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1130 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1150 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1170 ns
+fault on counter_TB_vhd.FUT.nand_n_3 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1190 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+110101010 = 1101 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_3
+obj       | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:2
+
+--------- Inject Fault:--------------------- NUMBER:3
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_4
+obj       | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nand_n_4
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1210 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1210 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1290 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1310 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1350 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1370 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1390 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1410 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1450 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1470 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1490 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1570 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1590 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1610 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1630 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1650 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1710 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1750 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 1810 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110111 = 0111 , 10111
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_4
+obj       | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:3
+
+--------- Inject Fault:--------------------- NUMBER:4
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_4
+obj       | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nand_n_4
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1830 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1830 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1910 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1930 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1970 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 1990 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2010 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2030 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2070 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2090 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2110 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2190 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2210 ns
+fault on counter_TB_vhd.FUT.nand_n_4 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 2230 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001111 = 1110 , 01111
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_4
+obj       | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:4
+
+--------- Inject Fault:--------------------- NUMBER:5
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_5
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_5
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2250 ns
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2250 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2370 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2390 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2410 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2430 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2490 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2530 ns
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2550 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2610 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2630 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001111 = 1110 , 01111
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_5
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:5
+
+--------- Inject Fault:--------------------- NUMBER:6
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_5
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_5
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2670 ns
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2670 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2790 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2810 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2830 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2850 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2910 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2950 ns
+fault on counter_TB_vhd.FUT.nor_n_5 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 2970 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111101 = 0101 , 11101
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_5
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:6
+
+--------- Inject Fault:--------------------- NUMBER:7
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_6
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_6
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 2990 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3010 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3030 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3050 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3070 ns
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3090 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3110 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3130 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3150 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3170 ns
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3190 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3210 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3230 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3290 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011011100 = 0110 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_6
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:7
+
+--------- Inject Fault:--------------------- NUMBER:8
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_6
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_6
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3310 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3330 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3350 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3370 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3390 ns
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3410 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3430 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3470 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3490 ns
+fault on counter_TB_vhd.FUT.nor_n_6 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3510 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101001010 = 1010 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_6
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:8
+
+--------- Inject Fault:--------------------- NUMBER:9
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_7
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_7
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3530 ns
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3530 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3550 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3570 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3590 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3610 ns
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3630 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3650 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3690 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3710 ns
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 3730 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101001010 = 1010 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_7
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:9
+
+--------- Inject Fault:--------------------- NUMBER:10
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_7
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_7
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3750 ns
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3750 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3770 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3790 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3810 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3830 ns
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3850 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3870 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3890 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3910 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3930 ns
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3950 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3970 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 3990 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_7 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4050 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010011100 = 0100 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_7
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:10
+
+--------- Inject Fault:--------------------- NUMBER:11
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_8
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_8
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4070 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4090 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4110 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4130 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4150 ns
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4170 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4210 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4230 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4250 ns
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4270 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4370 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4390 ns
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4390 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4410 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 4430 ns
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111101110 = 1111 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_8
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:11
+
+--------- Inject Fault:--------------------- NUMBER:12
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_8
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_8
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4490 ns
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4490 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4530 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4550 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4570 ns
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4590 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4630 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4650 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4670 ns
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4690 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4790 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4810 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4850 ns
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4910 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4930 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_8 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 4950 ns
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100101110 = 1001 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_8
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:12
+
+--------- Inject Fault:--------------------- NUMBER:13
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_9
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_9
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5010 ns
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5010 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5030 ns
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5130 ns
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+110101010 = 1101 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_9
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:13
+
+--------- Inject Fault:--------------------- NUMBER:14
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_9
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_9
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5230 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5250 ns
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5350 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5370 ns
+
+Si = 0
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5470 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5530 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5550 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5610 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5650 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5710 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5750 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5770 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5790 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_9 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 5830 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100110110 = 1001 , 10110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_9
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:14
+
+--------- Inject Fault:--------------------- NUMBER:15
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_10
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_10
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5850 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5890 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5910 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5910 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5930 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5930 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5950 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 5950 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6010 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6030 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6050 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6090 ns
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6190 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6210 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6230 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6270 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6270 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6330 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6430 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6450 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110110 = 0111 , 10110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00001111111111
+
+
+load_st(PPI) = 1111
+
+PI = 1
+
+expected_PO(PO) = 11111
+
+cur_expected_st(PPO) = 0000
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6470 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101111111 = 1011 , 11111
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111111 = 1011 , 11111
+
+---+++---+++---+++---+++
+Apply Test Vector: 01000011010011
+
+
+load_st(PPI) = 0011
+
+PI = 1
+
+expected_PO(PO) = 00110
+
+cur_expected_st(PPO) = 0100
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6570 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6570 ns
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6630 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6650 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000000110 = 0000 , 00110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000000110 = 0000 , 00110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00100001010001
+
+
+load_st(PPI) = 0001
+
+PI = 1
+
+expected_PO(PO) = 00010
+
+cur_expected_st(PPO) = 0010
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6670 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6670 ns
+
+Si = 0
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6750 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010000010 = 0100 , 00010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010000010 = 0100 , 00010
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 6770 ns
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_10
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:15
+
+--------- Inject Fault:--------------------- NUMBER:16
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_10
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_10
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6850 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6850 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6850 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6890 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6910 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6910 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6930 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6930 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6950 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6950 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6970 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 6990 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7010 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7030 ns
+fault on counter_TB_vhd.FUT.nor_n_10 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7050 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100101010 = 1001 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_10
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:16
+
+--------- Inject Fault:--------------------- NUMBER:17
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_11
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_11
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7070 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7110 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7150 ns
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7150 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7230 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7250 ns
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7270 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 7290 ns
+
+Si = 1
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011111100 = 0111 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_11
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:17
+
+--------- Inject Fault:--------------------- NUMBER:18
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_11
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_11
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7390 ns
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7390 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7430 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7470 ns
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7470 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7550 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7570 ns
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7590 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7630 ns
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7730 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7750 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7770 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7810 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7830 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_11 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 7870 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101001110 = 1010 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_11
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:18
+
+--------- Inject Fault:--------------------- NUMBER:19
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_12
+obj       | in1(0)
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nand_n_12
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 7910 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 7910 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 7990 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 8010 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 8050 ns
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 8090 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 8110 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 8130 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 1 --- fault on in1[1] = 3 --- Time: 8170 ns
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100111100 = 1001 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_12
+obj       | in1(0)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:19
+
+--------- Inject Fault:--------------------- NUMBER:20
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_12
+obj       | in1(1)
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nand_n_12
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8230 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8310 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8330 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8370 ns
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8410 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8430 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8470 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8490 ns
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8590 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8610 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8630 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8650 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8650 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8730 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8830 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110110 = 0111 , 10110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00001111111111
+
+
+load_st(PPI) = 1111
+
+PI = 1
+
+expected_PO(PO) = 11111
+
+cur_expected_st(PPO) = 0000
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8850 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8870 ns
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101111111 = 1011 , 11111
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111111 = 1011 , 11111
+
+---+++---+++---+++---+++
+Apply Test Vector: 01000011010011
+
+
+load_st(PPI) = 0011
+
+PI = 1
+
+expected_PO(PO) = 00110
+
+cur_expected_st(PPO) = 0100
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8950 ns
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 8950 ns
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 9030 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000000110 = 0000 , 00110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000000110 = 0000 , 00110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00100001010001
+
+
+load_st(PPI) = 0001
+
+PI = 1
+
+expected_PO(PO) = 00010
+
+cur_expected_st(PPO) = 0010
+
+Si = 0
+fault on counter_TB_vhd.FUT.nand_n_12 in1[0] = 3 --- fault on in1[1] = 1 --- Time: 9050 ns
+
+Si = 0
+
+Si = 0
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010000010 = 0100 , 00010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100000010 = 1000 , 00010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nand_n_12
+obj       | in1(1)
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:20
+
+--------- Inject Fault:--------------------- NUMBER:21
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_14
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_14
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9150 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9230 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9250 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9290 ns
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9330 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9350 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9390 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9410 ns
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9510 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9530 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9550 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9570 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9570 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9650 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9750 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110110 = 0111 , 10110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00001111111111
+
+
+load_st(PPI) = 1111
+
+PI = 1
+
+expected_PO(PO) = 11111
+
+cur_expected_st(PPO) = 0000
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9770 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9790 ns
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101111111 = 1011 , 11111
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111111 = 1011 , 11111
+
+---+++---+++---+++---+++
+Apply Test Vector: 01000011010011
+
+
+load_st(PPI) = 0011
+
+PI = 1
+
+expected_PO(PO) = 00110
+
+cur_expected_st(PPO) = 0100
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9870 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9870 ns
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9950 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000000110 = 0000 , 00110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000000110 = 0000 , 00110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00100001010001
+
+
+load_st(PPI) = 0001
+
+PI = 1
+
+expected_PO(PO) = 00010
+
+cur_expected_st(PPO) = 0010
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 9970 ns
+
+Si = 0
+
+Si = 0
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010000010 = 0100 , 00010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000000010 = 0000 , 00010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_14
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:21
+
+--------- Inject Fault:--------------------- NUMBER:22
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_14
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_14
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10070 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10150 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10170 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10210 ns
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10250 ns
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10270 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10290 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_14 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10330 ns
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000111100 = 0001 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_14
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:22
+
+--------- Inject Fault:--------------------- NUMBER:23
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_15
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_15
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10390 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10390 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10470 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10490 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10510 ns
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10570 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 10590 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111101010 = 1111 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_15
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:23
+
+--------- Inject Fault:--------------------- NUMBER:24
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_15
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_15
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10610 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10610 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10690 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10710 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10750 ns
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10790 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10810 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10850 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10870 ns
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10970 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 10990 ns
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11010 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11030 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11050 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_15 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11110 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+110001110 = 1100 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_15
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:24
+
+--------- Inject Fault:--------------------- NUMBER:25
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_16
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_16
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11130 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11230 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11270 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11290 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11330 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11370 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11390 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11410 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11510 ns
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11530 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11550 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000001110 = 0000 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_16
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:25
+
+--------- Inject Fault:--------------------- NUMBER:26
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_16
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_16
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11650 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11750 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11770 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11810 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_16 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 11850 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+001101010 = 0011 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_16
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:26
+
+--------- Inject Fault:--------------------- NUMBER:27
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_17
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_17
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11870 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11970 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 11990 ns
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12030 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12070 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+001101010 = 0011 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_17
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:27
+
+--------- Inject Fault:--------------------- NUMBER:28
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_17
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_17
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12090 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12190 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12230 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12250 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12290 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12330 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12350 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12370 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12470 ns
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12490 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_17 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 12510 ns
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000001110 = 0000 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_17
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:28
+
+--------- Inject Fault:--------------------- NUMBER:29
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_18
+obj       | in1(0)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_18
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12610 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12710 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12750 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12770 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12810 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12850 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12870 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12890 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 12990 ns
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13010 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13050 ns
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13150 ns
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110110 = 0111 , 10110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00001111111111
+
+
+load_st(PPI) = 1111
+
+PI = 1
+
+expected_PO(PO) = 11111
+
+cur_expected_st(PPO) = 0000
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13250 ns
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13250 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13270 ns
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101111111 = 1011 , 11111
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111111 = 1011 , 11111
+
+---+++---+++---+++---+++
+Apply Test Vector: 01000011010011
+
+
+load_st(PPI) = 0011
+
+PI = 1
+
+expected_PO(PO) = 00110
+
+cur_expected_st(PPO) = 0100
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13330 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 0 --- fault on in1[1] = 3 --- Time: 13350 ns
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000000110 = 0000 , 00110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100000110 = 1000 , 00110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_18
+obj       | in1(0)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:29
+
+--------- Inject Fault:--------------------- NUMBER:30
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_18
+obj       | in1(1)
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.nor_n_18
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13430 ns
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13430 ns
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13430 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13530 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13570 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13590 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13630 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13650 ns
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13690 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.nor_n_18 in1[0] = 3 --- fault on in1[1] = 0 --- Time: 13710 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+110111100 = 1101 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | nor_n_18
+obj       | in1(1)
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:30
+
+--------- Inject Fault:--------------------- NUMBER:31
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_19
+obj       | D
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_19
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_19 D = 1 --- Time: 13870 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_19 D = 1 --- Time: 13970 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_19 D = 1 --- Time: 14070 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_19 D = 1 --- Time: 14170 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111101110 = 1111 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_19
+obj       | D
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:31
+
+--------- Inject Fault:--------------------- NUMBER:32
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_19
+obj       | D
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_19
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_19 D = 0 --- Time: 14290 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_19 D = 0 --- Time: 14390 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101001010 = 1010 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_19
+obj       | D
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:32
+
+--------- Inject Fault:--------------------- NUMBER:33
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_20
+obj       | D
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_20
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_20 D = 1 --- Time: 14510 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_20 D = 1 --- Time: 14610 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_20 D = 1 --- Time: 14710 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011111100 = 0111 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_20
+obj       | D
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:33
+
+--------- Inject Fault:--------------------- NUMBER:34
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_20
+obj       | D
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_20
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_20 D = 0 --- Time: 14830 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_20 D = 0 --- Time: 14930 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100101010 = 1001 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_20
+obj       | D
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:34
+
+--------- Inject Fault:--------------------- NUMBER:35
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_21
+obj       | D
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_21
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_21 D = 1 --- Time: 15050 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_21 D = 1 --- Time: 15150 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111101010 = 1111 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_21
+obj       | D
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:35
+
+--------- Inject Fault:--------------------- NUMBER:36
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_21
+obj       | D
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_21
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_21 D = 0 --- Time: 15270 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_21 D = 0 --- Time: 15370 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_21 D = 0 --- Time: 15470 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000111100 = 0001 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_21
+obj       | D
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:36
+
+--------- Inject Fault:--------------------- NUMBER:37
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_22
+obj       | D
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_22
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_22 D = 1 --- Time: 15590 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_22 D = 1 --- Time: 15690 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_22 D = 1 --- Time: 15790 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+110111100 = 1101 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_22
+obj       | D
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:37
+
+--------- Inject Fault:--------------------- NUMBER:38
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_22
+obj       | D
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.dff_22
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.dff_22 D = 0 --- Time: 15910 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.dff_22 D = 0 --- Time: 16010 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+001101010 = 0011 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | dff_22
+obj       | D
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:38
+
+--------- Inject Fault:--------------------- NUMBER:39
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_24
+obj       | in1
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_24
+fault on counter_TB_vhd.FUT.pout_24 in1 = 1 --- Time: 16010 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010101 = 0000 , 10101
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_24
+obj       | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:39
+
+--------- Inject Fault:--------------------- NUMBER:40
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_24
+obj       | in1
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_24
+fault on counter_TB_vhd.FUT.pout_24 in1 = 0 --- Time: 16130 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101010 = 1011 , 01010
+
+---+++---+++---+++---+++
+Apply Test Vector: 11101110001110
+
+
+load_st(PPI) = 1110
+
+PI = 0
+
+expected_PO(PO) = 11100
+
+cur_expected_st(PPO) = 1110
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_24 in1 = 0 --- Time: 16410 ns
+fault on counter_TB_vhd.FUT.pout_24 in1 = 0 --- Time: 16430 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+010111100 = 0101 , 11100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+010111100 = 0101 , 11100
+
+---+++---+++---+++---+++
+Apply Test Vector: 10000111010111
+
+
+load_st(PPI) = 0111
+
+PI = 1
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 1000
+
+Si = 0
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+111001110 = 1110 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111001110 = 1110 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 01110111000111
+
+
+load_st(PPI) = 0111
+
+PI = 0
+
+expected_PO(PO) = 01110
+
+cur_expected_st(PPO) = 0111
+
+Si = 0
+
+Si = 1
+
+Si = 1
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+100001110 = 1000 , 01110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+100001110 = 1000 , 01110
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111011001011
+
+
+load_st(PPI) = 1011
+
+PI = 0
+
+expected_PO(PO) = 10110
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_24 in1 = 0 --- Time: 16670 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_24 in1 = 0 --- Time: 16690 ns
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+011110110 = 0111 , 10110
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+011110110 = 0111 , 10110
+
+---+++---+++---+++---+++
+Apply Test Vector: 00001111111111
+
+
+load_st(PPI) = 1111
+
+PI = 1
+
+expected_PO(PO) = 11111
+
+cur_expected_st(PPO) = 0000
+
+Si = 1
+
+Si = 1
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_24 in1 = 0 --- Time: 16790 ns
+
+Si = 1
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101111111 = 1011 , 11111
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111110 = 1011 , 11110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_24
+obj       | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:40
+
+--------- Inject Fault:--------------------- NUMBER:41
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_25
+obj       | in1
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_25
+fault on counter_TB_vhd.FUT.pout_25 in1 = 1 --- Time: 16850 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_25 in1 = 1 --- Time: 16890 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_25 in1 = 1 --- Time: 16910 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_25 in1 = 1 --- Time: 16930 ns
+fault on counter_TB_vhd.FUT.pout_25 in1 = 1 --- Time: 16950 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010110 = 0000 , 10110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_25
+obj       | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:41
+
+--------- Inject Fault:--------------------- NUMBER:42
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_25
+obj       | in1
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_25
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 16970 ns
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 16970 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17010 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17030 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17050 ns
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17070 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17090 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17110 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17130 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17150 ns
+fault on counter_TB_vhd.FUT.pout_25 in1 = 0 --- Time: 17170 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101000 = 1011 , 01000
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_25
+obj       | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:42
+
+--------- Inject Fault:--------------------- NUMBER:43
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_26
+obj       | in1
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_26
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17190 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17250 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17270 ns
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17290 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17350 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17370 ns
+fault on counter_TB_vhd.FUT.pout_26 in1 = 1 --- Time: 17390 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101101110 = 1011 , 01110
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_26
+obj       | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:43
+
+--------- Inject Fault:--------------------- NUMBER:44
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_26
+obj       | in1
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_26
+fault on counter_TB_vhd.FUT.pout_26 in1 = 0 --- Time: 17410 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_26 in1 = 0 --- Time: 17470 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_26 in1 = 0 --- Time: 17490 ns
+fault on counter_TB_vhd.FUT.pout_26 in1 = 0 --- Time: 17510 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010000 = 0000 , 10000
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_26
+obj       | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:44
+
+--------- Inject Fault:--------------------- NUMBER:45
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_27
+obj       | in1
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_27
+fault on counter_TB_vhd.FUT.pout_27 in1 = 1 --- Time: 17530 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_27 in1 = 1 --- Time: 17610 ns
+fault on counter_TB_vhd.FUT.pout_27 in1 = 1 --- Time: 17630 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000011100 = 0000 , 11100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_27
+obj       | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:45
+
+--------- Inject Fault:--------------------- NUMBER:46
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_27
+obj       | in1
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_27
+fault on counter_TB_vhd.FUT.pout_27 in1 = 0 --- Time: 17650 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_27 in1 = 0 --- Time: 17730 ns
+fault on counter_TB_vhd.FUT.pout_27 in1 = 0 --- Time: 17750 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_27 in1 = 0 --- Time: 17790 ns
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_27 in1 = 0 --- Time: 17830 ns
+fault on counter_TB_vhd.FUT.pout_27 in1 = 0 --- Time: 17850 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101100010 = 1011 , 00010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_27
+obj       | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:46
+
+--------- Inject Fault:--------------------- NUMBER:47
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_28
+obj       | in1
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_28
+fault on counter_TB_vhd.FUT.pout_28 in1 = 1 --- Time: 17870 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_28 in1 = 1 --- Time: 17970 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_28 in1 = 1 --- Time: 18010 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_28 in1 = 1 --- Time: 18030 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_28 in1 = 1 --- Time: 18070 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+101111010 = 1011 , 11010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_28
+obj       | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:47
+
+--------- Inject Fault:--------------------- NUMBER:48
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_28
+obj       | in1
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_28
+fault on counter_TB_vhd.FUT.pout_28 in1 = 0 --- Time: 18090 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_28 in1 = 0 --- Time: 18190 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000000100 = 0000 , 00100
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_28
+obj       | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:48
+
+--------- Inject Fault:--------------------- NUMBER:49
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_34
+obj       | in1
+faultType | 1
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_34
+fault on counter_TB_vhd.FUT.pout_34 in1 = 1 --- Time: 18210 ns
+fault on counter_TB_vhd.FUT.pout_34 in1 = 1 --- Time: 18210 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_34 in1 = 1 --- Time: 18310 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111110100 = 1111 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_34 in1 = 1 --- Time: 18350 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_34 in1 = 1 --- Time: 18370 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_34 in1 = 1 --- Time: 18410 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+111101010 = 1111 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_34
+obj       | in1
+faultType | 1
+--------- Remove Fault:--------------------- NUMBER:49
+
+--------- Inject Fault:--------------------- NUMBER:50
+Fault to be Injected: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_34
+obj       | in1
+faultType | 0
+## enable faultInjected signal on module:: counter_TB_vhd.FUT.pout_34
+fault on counter_TB_vhd.FUT.pout_34 in1 = 0 --- Time: 18430 ns
+
+---+++---+++---+++---+++
+Apply Test Vector: 10111010011010
+
+
+load_st(PPI) = 1010
+
+PI = 1
+
+expected_PO(PO) = 10100
+
+cur_expected_st(PPO) = 1011
+
+Si = 1
+
+Si = 0
+
+Si = 1
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_34 in1 = 0 --- Time: 18530 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+000010100 = 0000 , 10100
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000010100 = 0000 , 10100
+
+---+++---+++---+++---+++
+Apply Test Vector: 01010101000101
+
+
+load_st(PPI) = 0101
+
+PI = 0
+
+expected_PO(PO) = 01010
+
+cur_expected_st(PPO) = 0101
+
+Si = 0
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_34 in1 = 0 --- Time: 18570 ns
+
+Si = 0
+fault on counter_TB_vhd.FUT.pout_34 in1 = 0 --- Time: 18590 ns
+
+Si = 1
+fault on counter_TB_vhd.FUT.pout_34 in1 = 0 --- Time: 18630 ns
+
+pre_expected_st_and_expected_PO = (pre_expected_st, expected_PO)
+101101010 = 1011 , 01010
+
+saved_st_and_sampledPO = (saved_st, sampledPO)
+000001010 = 0000 , 01010
+Fault to be removed: 
+----------|-------------- 
+testbench | counter_TB_vhd
+dut       | FUT
+module    | pout_34
+obj       | in1
+faultType | 0
+--------- Remove Fault:--------------------- NUMBER:50
+
++ End of faultInjection::---------------------------  
